@@ -1,6 +1,9 @@
 # 1. INTRODUÇÃO
 
-Contextualizar a área de pesquisa do trabalho, apresentando conceitos e dados relacionados antes de apresentar a problemática a ser investigada.
+Conhecer os nutrientes que ingerimos tornou-se algo essencial para o nosso bem estar e saúde. Estar atentos ás quantidades de calorias, gorduras, fibras, açúcares, vitaminas e minerais, é uma das formas mais eficazes para a diminuição de doenças crônicas como diabetes e hipertensão.
+Com o Brasil ocupando a sexta posição mundial no ranking de incidência de diabetes (Federação Internacional de Diabetes, 2025) com um total aproximado de 17 milhões de pessoas, e com um percentual aproximado de 30% da população com problemas de hipertensão arterial (Ministério da Saúde, 2023), é de extrema importância sabermos o que consumimos na nossa alimentação.
+O software XXX nasce a partir desta problemática, permitindo que o usuário possa consultar alimentos de interesse, retornando informações sobre a nutrição do alimento e oferecendo sugestões para a melhoria das refeições.
+
 
 ## 1.1. Problema
 
