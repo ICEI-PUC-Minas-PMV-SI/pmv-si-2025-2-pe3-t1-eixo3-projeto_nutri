@@ -9,8 +9,7 @@ Este trabalho apresenta o projeto de um software que visa preencher essas necess
 
 ## 1.1. Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. 
-Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Com o crescimento da conscientização sobre a importância da saúde nutricional e do impacto da alimentação na glicemia e no bem-estar físico e mental, tem-se observado que os softwares de planejamento dietético e as informações disponíveis para profissionais e usuários são inadequados. Embora existam ferramentas que auxiliam na análise nutricional, muitas apresentam modelos subjacentes desconhecidos e pouca flexibilidade a modificações, bases de dados inconsistentes e limitadas, e falham em traduzir descobertas científicas avançadas – como a importância da ordem, combinação e agrupamento dos alimentos para achatar a curva de glicemia e otimizar a resposta de insulina – em funcionalidades práticas e acessíveis. Essa lacuna impede que indivíduos gerenciem proativamente sua saúde metabólica, resultando em picos de glicemia prejudiciais que contribuem para diversas doenças crônicas e dificuldades em aplicar princípios nutricionais cientificamente embasados no dia a dia. Nesse contexto, como seria possível integrar o processo de criação, validação e acompanhamento de planos alimentares personalizados com a análise detalhada do impacto metabólico dos alimentos, oferecendo uma gestão de receitas e ingredientes que capacite o usuário a tomar decisões alimentares informadas e a visualizar de forma clara e contínua os efeitos de suas escolhas na saúde?
 
 ## 1.2. Objetivos do trabalho
 
