@@ -13,7 +13,7 @@ Com o crescimento da conscientização sobre a importância da saúde nutriciona
 
 ## 1.2. Objetivos do trabalho
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua finalidade. Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos necessários para a realização do trabalho.
+Desenvolver um software nutricional que permite o resgistro de receitas e de refeiçõe diárias, para auxiliar no controle de indicadores de saúde e promover hábitos alimentares saudáveis.
 
 ## 1.3. Justificativa
 
