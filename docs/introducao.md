@@ -25,4 +25,4 @@ O software XXX nasce a partir desta problemática, permitindo que o usuário pos
 
 ## 1.4. Público alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+Define-se como público-alvo adultos que buscam uma alimentação equilibrada para melhorar indicadores de saúde e bem-estar. Abrange desde iniciantes em nutrição até usuários intermediários — com ou sem acompanhamento profissional — interessados em registrar refeições, comparar receitas e receber orientações que auxiliem no controle de glicemia, colesterol e ingestão de macro/micronutrientes, incluindo praticantes de atividades físicas e pessoas com rotina corrida que necessitam de recomendações práticas. Em termos de perfil tecnológico, presume-se familiaridade básica com aplicativos web e mobile, valorizando interface acessível e linguagem clara.
