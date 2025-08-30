@@ -13,7 +13,19 @@ Com o crescimento da conscientização sobre a importância da saúde nutriciona
 
 ## 1.2. Objetivos do trabalho
 
-Desenvolver um software nutricional que permite o resgistro de receitas e de refeiçõe diárias, para auxiliar no controle de indicadores de saúde e promover hábitos alimentares saudáveis.
+## 1.2.1 Objetivo Geral
+
+Desenvolver um software nutricional informativo e dinâmico. 
+
+## 1.2.2. Objetivos Específicos
+
+Desenvolver um software que permita o registro de receitas e de refeições diárias. 
+
+Desenvolver um software informativo sobre nutrientes presentes em cada alimento para auxiliar em dietas. 
+
+Auxiliar no controle de indicadores de saúde e promover hábitos alimentares saudáveis. 
+
+Indicar receitas e alimentos nutritivos e saudáveis para necessidades específicas do consumidor. 
 
 ## 1.3. Justificativa
 
