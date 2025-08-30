@@ -17,9 +17,9 @@ Desenvolver um software nutricional que permite o resgistro de receitas e de ref
 
 ## 1.3. Justificativa
 
-Conhecer os nutrientes que ingerimos tornou-se algo essencial para o nosso bem estar e saúde. Estar atentos ás quantidades de calorias, gorduras, fibras, açúcares, vitaminas e minerais, é uma das formas mais eficazes para a diminuição de doenças crônicas como diabetes e hipertensão.
+Conhecer os nutrientes presentes nos alimentos ingeridos tornou-se essencial para o bem-estar e a saúde. Estar atento às quantidades de calorias, gorduras, fibras, açúcares, vitaminas e minerais é uma das formas mais eficazes de reduzir a incidência de doenças crônicas, como diabetes e hipertensão (Organização Mundial da Saúde, 2024).
 
-Com o Brasil ocupando a sexta posição mundial no ranking de incidência de diabetes (Federação Internacional de Diabetes, 2025) com um total aproximado de 17 milhões de pessoas, e com um percentual aproximado de 30% da população com problemas de hipertensão arterial (Ministério da Saúde, 2023), é de extrema importância sabermos o que consumimos na nossa alimentação.
+Com o Brasil ocupando a sexta posição mundial no ranking de incidência de diabetes (Federação Internacional de Diabetes, 2025), com aproximadamente 17 milhões de pessoas diagnosticadas, e com cerca de 30% da população apresentando problemas de hipertensão arterial (Ministério da Saúde, 2023), torna-se fundamental compreender melhor os alimentos consumidos no dia a dia.
 
 O software XXX nasce a partir desta problemática, permitindo que o usuário possa consultar alimentos de interesse, retornando informações sobre a nutrição do alimento e oferecendo sugestões para a melhoria das refeições.
 
