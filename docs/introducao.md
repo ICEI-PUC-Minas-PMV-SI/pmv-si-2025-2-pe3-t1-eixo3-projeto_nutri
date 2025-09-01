@@ -15,17 +15,15 @@ Com o crescimento da conscientização sobre a importância da saúde nutriciona
 
 ## 1.2.1 Objetivo Geral
 
-Desenvolver um software nutricional informativo e dinâmico. 
+Desenvolver um aplicativo web que permita aos usuários cadastrar receitas, refeições e dietas, avaliando seus valores nutricionais.
 
 ## 1.2.2. Objetivos Específicos
 
-Desenvolver um software que permita o registro de receitas e de refeições diárias. 
+- Cadastrar e buscar receitas e refeições.
+- Avaliar o valor nutritivo dos alimentos e das receitas e refeições.
+- Auxiliar no controle de indicadores de saúde e promover hábitos alimentares saudáveis.
+- Indicar receitas e alimentos nutritivos e saudáveis para necessidades específicas do consumidor. 
 
-Desenvolver um software informativo sobre nutrientes presentes em cada alimento para auxiliar em dietas. 
-
-Auxiliar no controle de indicadores de saúde e promover hábitos alimentares saudáveis. 
-
-Indicar receitas e alimentos nutritivos e saudáveis para necessidades específicas do consumidor. 
 
 ## 1.3. Justificativa
 
@@ -33,7 +31,7 @@ Conhecer os nutrientes presentes nos alimentos ingeridos tornou-se essencial par
 
 Com o Brasil ocupando a sexta posição mundial no ranking de incidência de diabetes (Federação Internacional de Diabetes, 2025), com aproximadamente 17 milhões de pessoas diagnosticadas, e com cerca de 30% da população apresentando problemas de hipertensão arterial (Ministério da Saúde, 2023), torna-se fundamental compreender melhor os alimentos consumidos no dia a dia.
 
-O software XXX nasce a partir desta problemática, permitindo que o usuário possa consultar alimentos de interesse, retornando informações sobre a nutrição do alimento e oferecendo sugestões para a melhoria das refeições.
+O software NUTRI nasce a partir desta problemática, permitindo que o usuário possa consultar alimentos de interesse, retornando informações sobre a nutrição do alimento e oferecendo sugestões para a melhoria das refeições.
 
 ## 1.4. Público alvo
 
