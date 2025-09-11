@@ -1,29 +1,35 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos usuários que buscam uma alimentação equilibrada e controle de indicadores de saúde, que devem ser atendidas pela aplicação web NUTRI.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será denominado NUTRI. Ele será uma aplicação web composta pelos seguintes módulos principais:
+
+Módulo de Gestão de Alimentos e Receitas: Para cadastro e consulta de ingredientes e receitas.
+
+Módulo de Análise Nutricional e Metabólica: Para avaliação de refeições e dietas, com foco em macronutrientes, micronutrientes e impacto glicêmico.
+
+Módulo de Planejamento e Acompanhamento: Para montagem de planos alimentares e registro de indicadores de saúde.
+
+Módulo de Perfil do Usuário: Para gestão de dados pessoais, metas e preferências.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Capacitar os usuários a gerenciar proativamente sua saúde nutricional, permitindo o cadastro, análise e acompanhamento de receitas, refeições e dietas. A missão é traduzir conhecimento científico sobre o impacto metabólico dos alimentos (como a resposta glicêmica e de insulina) em uma ferramenta prática e acessível para o dia a dia, promovendo decisões alimentares informadas.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O NUTRI não substitui a orientação de um profissional de saúde e não realiza prescrições dietéticas. O sistema não fará integração direta com dispositivos de monitoramento de saúde (como monitores contínuos de glicose), não incluirá funcionalidades de e-commerce para compra de ingredientes, nem servirá como plataforma de teleconsulta com nutricionistas.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Tomada de Decisão Alimentar Informada |	Essencial |
+|2 | Facilidade no Controle da Saúde Metabólica (glicemia, colesterol, etc.) | Essencial | 
+|3 | Aplicação Prática da Ciência Nutricional no Dia a Dia | Essencial | 
+|4	| Acesso a Receitas Personalizadas e Saudáveis	| Recomendável | 
 
 ## 3.3 Descrição geral do produto
 
@@ -31,19 +37,21 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Gerenciar Perfil de Usuário |	Permitir o cadastro, alteração e exclusão do perfil do usuário, incluindo dados pessoais, metas de saúde (ex: controle de glicemia, perda de peso) e restrições alimentares. |
+| RF2 |	Gerenciar Alimentos	| 	Permitir a consulta de alimentos em uma base de dados nutricional e o cadastro de novos alimentos pelo usuário. |
+| RF3	| Gerenciar Receitas |	Permitir que o usuário cadastre, altere, exclua e busque receitas, compondo-as a partir de uma lista de ingredientes e quantidades. |
+| RF4 |	Analisar Valor Nutricional	| Calcular e exibir o valor nutricional (calorias, macronutrientes, fibras, vitaminas, etc.) de alimentos, receitas, refeições e planos alimentares. |
+| RF5 |	Montar Refeições e Planos Alimentares	| Permitir que o usuário crie refeições (ex: Café da Manhã, Almoço) e planos alimentares diários ou semanais, combinando receitas e alimentos. |
+| RF6 |	Sugerir Receitas e Alimentos	| Oferecer sugestões de receitas e alimentos com base nas metas, preferências e restrições do usuário, e também com base nos ingredientes que ele possui. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | Usabilidade: A interface do sistema deve ser intuitiva, acessível e responsiva, adaptando-se a diferentes tamanhos de tela (desktops, tablets e celulares). |
+| RNF2 | Desempenho: O tempo de resposta para buscas e cálculos nutricionais não deve exceder 10 segundos, garantindo uma experiência de usuário fluida. |
+| RNF3 |	Confiabilidade da Base de Dados: A base de dados de alimentos deve utilizar fontes nutricionais reconhecidas e confiáveis (ex: Tabela TACO, USDA) ou APIs validadas para garantir a precisão das informações. |
+
 
 ### 3.3.3 Usuários 
 
