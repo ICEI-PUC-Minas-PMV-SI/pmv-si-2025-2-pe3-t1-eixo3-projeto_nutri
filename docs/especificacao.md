@@ -37,12 +37,17 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Perfil de Usuário |	Permitir o cadastro, alteração e exclusão do perfil do usuário, incluindo dados pessoais, metas de saúde (ex: controle de glicemia, perda de peso) e restrições alimentares. |
+| RF1 | Gerenciar Perfil de Usuário |	Permitir o cadastro, alteração e exclusão do perfil do usuário, incluindo dados pessoais e restrições alimentares. |
 | RF2 |	Gerenciar Alimentos	| 	Permitir a consulta de alimentos em uma base de dados nutricional e o cadastro de novos alimentos pelo usuário. |
 | RF3	| Gerenciar Receitas |	Permitir que o usuário cadastre, altere, exclua e busque receitas, compondo-as a partir de uma lista de ingredientes e quantidades. |
 | RF4 |	Analisar Valor Nutricional	| Calcular e exibir o valor nutricional (calorias, macronutrientes, fibras, vitaminas, etc.) de alimentos, receitas, refeições e planos alimentares. |
 | RF5 |	Montar Refeições e Planos Alimentares	| Permitir que o usuário crie refeições (ex: Café da Manhã, Almoço) e planos alimentares diários ou semanais, combinando receitas e alimentos. |
 | RF6 |	Sugerir Receitas e Alimentos	| Oferecer sugestões de receitas e alimentos com base nas metas, preferências e restrições do usuário, e também com base nos ingredientes que ele possui. |
+| RF7 |	Gerenciar Metas 	| Permitir que o usuário cadastre metas referentes a alimentação, controle de glicemia, nutrição e peso. |
+| RF8 |	Registrar Consumo Alimentar	| Permitir que o usuário registre os alimentos consumidos em cada refeição ao longo do dia, possibilitando o acompanhamento e registro da alimentação. |
+| RF9 |	Registrar Água Diária	| Permitir que o usuário registre a quantidade de água ingerida ao longo do dia, permitindo o acompanhamento da quantidade. |
+| RF10 | Gerenciar Perfil de Nutricionista |	Permitir o cadastro, alteração e exclusão do perfil de nutricionista no sistema. |
+| RF11 | Publicações de Nutricionistas |	Permitir a publicação de informações por profissionais da área sobre receitas cadastradas e orientações sobre consumo de alimentos no sistema. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
