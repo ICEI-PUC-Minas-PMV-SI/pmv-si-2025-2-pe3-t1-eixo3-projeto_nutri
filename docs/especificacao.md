@@ -47,7 +47,8 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 | RF8 |	Registrar Consumo Alimentar	| Permitir que o usuário registre os alimentos consumidos em cada refeição ao longo do dia, possibilitando o acompanhamento e registro da alimentação. |
 | RF9 |	Registrar Água Diária	| Permitir que o usuário registre a quantidade de água ingerida ao longo do dia, permitindo o acompanhamento da quantidade. |
 | RF10 | Gerenciar Perfil de Nutricionista |	Permitir o cadastro, alteração e exclusão do perfil de nutricionista no sistema. |
-| RF11 | Publicações de Nutricionistas |	Permitir a publicação de informações por profissionais da área sobre receitas cadastradas e orientações sobre consumo de alimentos no sistema. |
+| RF11 | Publicações de Nutricionistas |	Permitir a publicação de informações por profissionais da área sobre receitas cadastradas e orientações sobre consumo de alimentosno sistema. |
+| RF12 | Publicações de Personal Trainer |	Permitir a publicação de informações por profissionais da área sobre exercícios físicos e execução dos exercícios. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -62,8 +63,10 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
+| Administrador |	Usuário gerente do sistema responsável pelo cadastro e manutenção e aperfeiçoamento. Possui acesso geral ao sistema. |
+| Usuário Comum |	Usuário responsável por registrar alimentos, consumo de alimentos, receitas e metas pessoais no sistema. |
+| Nutricionista |	Usuário responsável por registrar receitas e alimentos e por publicar orientações para os usuários . |
+| Personal Trainer |	Usuário responsável por registrar atividades físicas e orientações sobre as execuções no sistema. |
 | ... |	... |	... |
 
 ## 3.4 Modelagem do Sistema
