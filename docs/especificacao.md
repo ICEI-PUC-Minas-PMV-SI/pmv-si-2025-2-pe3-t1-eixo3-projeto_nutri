@@ -74,42 +74,40 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
-#### Gerenciar Professor (CSU01)
+#### Gerenciar Perfil de Usuário (CSU01)
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Sumário: Usuário realiza o cadastro, alteração ou exclusão do perfil.
 
-Ator Primário: Secretária.
+Ator Primário: Usuário.
 
-Ator Secundário: Coordenador.
-
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições: O usuário deve ser validado pelo Sistema.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1) 	O Usuário acessa o sistema,
+2) 	O Sistema apresenta as operações que podem ser realizadas: novo cadastro, alteração de um cadastro existente, exclusão do perfil ou consulta,
+3) 	O Usuário seleciona a operação cadastro de perfil,
+4)  O Sistema apresenta um formulário solicitando dados: nome, e-mail, telefone, endereço, peso atual, peso ideal, restrições alimentares, rotina de exercícios,
+5)  O Usuário preenche o formulário solicitado,
+6)  O sistema valida os dados,
+7)  Se os dados forem validados com sucesso o perfil é criado, caso alguma informação esteja incompleta o sistema notifica o erro e solicita correção.
 
-Fluxo Alternativo (3): Inclusão
+Fluxo Alternativo (2): Alteração de cadastro.
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+a)	O usuário seleciona alteração de cadastro. <br>
+b)	O Sistema apresenta o dados atuais do perfil. <br>
+c)	O Usuário realiza a as alterações desejadas. <br>
+d)	O Sistema valida os novos dados. <br>
+e)	Se os dados forem validados com sucesso o perfil é alterado, caso alguma informação esteja incompleta o sistema notifica o erro e solicita correção. <br>
 
-Fluxo Alternativo (3): Remoção
+Fluxo Alternativo (3): Exclusão de cadastro.
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+a)	O usuário seleciona exclusão de cadastro. <br>
+b)	O Sistema solicita a confirmação da ação. <br>
+c)	O Usuário confirma a ação. <br>
+d)	O Sistema realiza a exclusão do perfil. <br>
 
-Fluxo Alternativo (3): Alteração
-
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
+-----
 Fluxo Alternativo (3): Consulta
 
 a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
