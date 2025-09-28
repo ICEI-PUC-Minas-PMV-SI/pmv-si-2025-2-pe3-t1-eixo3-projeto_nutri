@@ -88,8 +88,6 @@ Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema
 
----
-
 Fluxo Principal:
 
 1) O Usuário acessa a funcionalidade de Gerenciar Perfil.
@@ -130,8 +128,6 @@ Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema.
 
----
-
 Fluxo Principal (Consulta):
 
 1) O Usuário acessa a funcionalidade de Gerenciar Alimentos.
@@ -159,8 +155,6 @@ Sumário: Usuário pode cadastrar, alterar, excluir e buscar receitas, montando-
 Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema.
-
----
 
 Fluxo Principal (Cadastro):
 
@@ -208,8 +202,6 @@ Sumário: O sistema calcula e exibe o valor nutricional de alimentos, receitas, 
 Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema e ter alimentos/receitas cadastrados.
-
----
 
 Fluxo Principal:
 
