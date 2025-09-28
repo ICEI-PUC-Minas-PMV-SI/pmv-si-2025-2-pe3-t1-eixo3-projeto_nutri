@@ -1,0 +1,53 @@
+@startuml
+skinparam class {
+  BackgroundColor White
+  ArrowColor Black
+  BorderColor Black
+}
+
+class Usuario {
+}
+class Administrador {
+}
+class UsuarioComum {
+}
+class Nutricionista {
+}
+class PersonalTrainer {
+}
+class Perfil {
+}
+class Meta {
+}
+class Alimento {
+}
+class Receita {
+}
+class Ingrediente {
+}
+class Refeicao {
+}
+class PlanoAlimentar {
+}
+class Publicacao {
+}
+
+Usuario <|-- Administrador
+Usuario <|-- UsuarioComum
+Usuario <|-- Nutricionista
+Usuario <|-- PersonalTrainer
+
+Usuario "1" --> "1" Perfil : possui >
+Usuario "1" --> "0..*" Meta : define >
+UsuarioComum "1" --> "0..*" Refeicao : registra >
+UsuarioComum "1" --> "0..*" PlanoAlimentar : monta >
+
+Alimento "1" --> "0..*" Receita : compõe >
+Receita "1" --> "0..*" Ingrediente : contém >
+
+Refeicao "1" --> "1..*" Receita : combina >
+PlanoAlimentar "1" --> "1..*" Refeicao : organiza >
+
+Nutricionista "1" --> "0..*" Publicacao : publica >
+PersonalTrainer "1" --> "0..*" Publicacao : publica >
+@enduml
