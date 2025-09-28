@@ -49,6 +49,7 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 | RF10 | Gerenciar Perfil de Nutricionista |	Permitir o cadastro, alteração e exclusão do perfil de nutricionista no sistema. |
 | RF11 | Publicações de Nutricionistas |	Permitir a publicação de informações por profissionais da área sobre receitas cadastradas e orientações sobre consumo de alimentosno sistema. |
 | RF12 | Publicações de Personal Trainer |	Permitir a publicação de informações por profissionais da área sobre exercícios físicos e execução dos exercícios. |
+| RF13 | Gerenciar Perfil de Personal Trainer |	Permitir o cadastro, alteração e exclusão do perfil de personal trainer no sistema. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
@@ -389,6 +390,25 @@ d) O Sistema valida e salva as alterações ou remove a meta.
 4. O Sistema valida e salva a publicação.
 
 **Pós-condições:** Publicação de personal trainer criada, alterada ou excluída com sucesso.
+
+---
+
+### Gerenciar Perfil de Personal Trainer (CSU13)
+
+**Sumário:** Personal Trainer cadastra, altera ou exclui seu perfil no sistema.
+
+**Ator Primário:** Personal Trainer.
+
+**Pré-condições:** O usuário deve estar autenticado.
+
+**Fluxo Principal:**
+
+1. O Personal Trainer acessa a funcionalidade de Gerenciar Perfil de Personal Trainer.
+2. O Sistema apresenta as opções: cadastrar, alterar ou excluir perfil.
+3. O Personal Trainer preenche ou altera as informações necessárias.
+4. O Sistema valida e salva as alterações.
+
+**Pós-condições:** Perfil de Personal Trainer cadastrado, alterado ou excluído.
 
 ---
 
