@@ -99,92 +99,108 @@ Fluxo Principal:
 7 Se válidos, a operação é concluída com sucesso.
 
 Fluxo Alternativo (Cadastro incompleto):
-a) Se algum campo obrigatório não for preenchido corretamente, o Sistema solicita correção.
+
+a) Se algum campo obrigatório não for preenchido corretamente, o Sistema solicita correção.<br>
 
 Fluxo Alternativo (Alteração):
-a) O Usuário seleciona "Alterar".
-b) O Sistema mostra os dados atuais.
-c) O Usuário altera as informações.
-d) O Sistema valida e salva as alterações.
+
+a) O Usuário seleciona "Alterar". <br>
+b) O Sistema mostra os dados atuais.<br>
+c) O Usuário altera as informações.<br>
+d) O Sistema valida e salva as alterações.<br>
 
 Fluxo Alternativo (Exclusão):
-a) O Usuário seleciona "Excluir".
-b) O Sistema solicita confirmação.
-c) O Usuário confirma.
-d) O Sistema remove o perfil.
+
+a) O Usuário seleciona "Excluir".<br>
+b) O Sistema solicita confirmação.<br>
+c) O Usuário confirma.<br>
+d) O Sistema remove o perfil.<br>
 
 Pós-condições: O perfil foi cadastrado, alterado ou excluído.
 
 #### Gerenciar Alimentos (CSU02)
 
 Sumário: Usuário pode consultar alimentos existentes na base de dados ou cadastrar novos alimentos.
+
 Ator Primário: Usuário.
+
 Pré-condições: O usuário deve estar autenticado no sistema.
 
 Fluxo Principal (Consulta):
 
-O Usuário acessa a funcionalidade de Gerenciar Alimentos.
-O Sistema exibe a lista de alimentos cadastrados.
-O Usuário pode pesquisar por nome ou categoria.
-O Sistema apresenta os resultados.
+1) O Usuário acessa a funcionalidade de Gerenciar Alimentos.
+2) O Sistema exibe a lista de alimentos cadastrados.
+3) O Usuário pode pesquisar por nome ou categoria.
+4) O Sistema apresenta os resultados.
 
-Fluxo Alternativo (Cadastro de novo alimento):
-O Usuário seleciona a opção "Cadastrar alimento".
-O Sistema solicita nome, categoria e informações nutricionais.
-O Usuário insere os dados.
-O Sistema valida e salva o novo alimento.
+Fluxo Alternativo (Cadastro de novo alimento)
+
+a) O Usuário seleciona a opção "Cadastrar alimento".<br>
+b) O Sistema solicita nome, categoria e informações nutricionais.<br>
+c) O Usuário insere os dados.<br>
+d) O Sistema valida e salva o novo alimento.<br>
 
 Pós-condições: O alimento foi consultado ou cadastrado com sucesso
 
 #### Gerenciar Receitas (CSU03)
 
 Sumário: Usuário pode cadastrar, alterar, excluir e buscar receitas, montando-as a partir de ingredientes e quantidades.
+
 Ator Primário: Usuário.
+
 Pré-condições: O usuário deve estar autenticado no sistema.
 
 Fluxo Principal (Cadastro):
-O Usuário acessa a funcionalidade de Gerenciar Receitas.
-O Sistema apresenta as opções: cadastrar, alterar, excluir ou buscar receitas.
-O Usuário seleciona "Cadastrar receita".
-O Sistema solicita nome da receita e ingredientes.
-O Usuário informa os dados.
-O Sistema valida e salva a receita.
+
+1) O Usuário acessa a funcionalidade de Gerenciar Receitas.
+2) O Sistema apresenta as opções: cadastrar, alterar, excluir ou buscar receitas.
+3) O Usuário seleciona "Cadastrar receita".
+4) O Sistema solicita nome da receita e ingredientes.
+5) O Usuário informa os dados.
+6) O Sistema valida e salva a receita.
 
 Fluxo Alternativo (Alteração):
-O Usuário seleciona "Alterar receita".
-O Sistema exibe receitas cadastradas.
-O Usuário escolhe uma receita.
-O Usuário edita dados (nome ou ingredientes).
-O Sistema valida e salva alterações.
+
+a) O Usuário seleciona "Alterar receita".<br>
+b) O Sistema exibe receitas cadastradas.<br>
+c) O Usuário escolhe uma receita.<br>
+d) O Usuário edita dados (nome ou ingredientes).<br>
+e) O Sistema valida e salva alterações.<br>
 
 Fluxo Alternativo (Exclusão):
-O Usuário seleciona "Excluir receita".
-O Sistema lista receitas cadastradas.
-O Usuário seleciona uma receita.
-O Sistema solicita confirmação e exclui a receita.
+
+a) O Usuário seleciona "Excluir receita".<br>
+b) O Sistema lista receitas cadastradas.<br>
+c) O Usuário seleciona uma receita.<br>
+e) O Sistema solicita confirmação e exclui a receita.<br>
 
 Fluxo Alternativo (Busca):
-O Usuário digita o nome da receita.
-O Sistema exibe os resultados encontrados.
+
+a) O Usuário digita o nome da receita.<br>
+b) O Sistema exibe os resultados encontrados.<br>
 
 Pós-condições: Receita cadastrada, alterada, excluída ou buscada com sucesso.
 
 #### Analisar Valor Nutricional (CSU04)
 
 Sumário: O sistema calcula e exibe o valor nutricional de alimentos, receitas, refeições e planos alimentares.
+
 Ator Primário: Usuário.
+
 Pré-condições: O usuário deve estar autenticado no sistema e ter alimentos/receitas cadastrados.
 
 Fluxo Principal:
-O Usuário acessa a funcionalidade de Analisar Valor Nutricional.
-O Sistema solicita que o Usuário selecione um alimento, receita, refeição ou plano alimentar.
-O Usuário seleciona a opção desejada.
-O Sistema calcula calorias, proteínas, carboidratos, gorduras, fibras, vitaminas, etc.
-O Sistema exibe o relatório nutricional.
+
+1) O Usuário acessa a funcionalidade de Analisar Valor Nutricional.
+2) O Sistema solicita que o Usuário selecione um alimento, receita, refeição ou plano alimentar.
+3) O Usuário seleciona a opção desejada.
+4) O Sistema calcula calorias, proteínas, carboidratos, gorduras, fibras, vitaminas, etc.
+5) O Sistema exibe o relatório nutricional.
 
 Fluxo Alternativo (Dados insuficientes):
-Se não houver informações nutricionais completas, o Sistema informa que não é possível calcular.
-Pós-condições: O valor nutricional é exibido ao usuário.
+
+a) Se não houver informações nutricionais completas, o Sistema informa que não é possível calcular.<br>
+b) Pós-condições: O valor nutricional é exibido ao usuário.<br>
 
 ### 3.4.3 Diagrama de Classes 
 
