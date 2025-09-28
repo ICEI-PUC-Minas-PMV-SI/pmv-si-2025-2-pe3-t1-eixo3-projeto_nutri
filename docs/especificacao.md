@@ -98,23 +98,19 @@ Fluxo Principal:
 6) O Sistema valida os dados.
 7 Se válidos, a operação é concluída com sucesso.
 
-Fluxo Alternativo (Cadastro incompleto):
-
-a) Se algum campo obrigatório não for preenchido corretamente, o Sistema solicita correção.<br>
-
 Fluxo Alternativo (Alteração):
 
-a) O Usuário seleciona "Alterar". <br>
-b) O Sistema mostra os dados atuais.<br>
-c) O Usuário altera as informações.<br>
-d) O Sistema valida e salva as alterações.<br>
+ a) O Usuário seleciona "Alterar". <br>
+ b) O Sistema mostra os dados atuais.<br>
+ c) O Usuário altera as informações.<br>
+ d) O Sistema valida e salva as alterações.<br>
 
 Fluxo Alternativo (Exclusão):
 
-a) O Usuário seleciona "Excluir".<br>
-b) O Sistema solicita confirmação.<br>
-c) O Usuário confirma.<br>
-d) O Sistema remove o perfil.<br>
+ a) O Usuário seleciona "Excluir".<br>
+ b) O Sistema solicita confirmação.<br>
+ c) O Usuário confirma.<br>
+ d) O Sistema remove o perfil.<br>
 
 Pós-condições: O perfil foi cadastrado, alterado ou excluído.
 
@@ -135,10 +131,10 @@ Fluxo Principal (Consulta):
 
 Fluxo Alternativo (Cadastro de novo alimento)
 
-a) O Usuário seleciona a opção "Cadastrar alimento".<br>
-b) O Sistema solicita nome, categoria e informações nutricionais.<br>
-c) O Usuário insere os dados.<br>
-d) O Sistema valida e salva o novo alimento.<br>
+ a) O Usuário seleciona a opção "Cadastrar alimento".<br>
+ b) O Sistema solicita nome, categoria e informações nutricionais.<br>
+ c) O Usuário insere os dados.<br>
+ d) O Sistema valida e salva o novo alimento.<br>
 
 Pós-condições: O alimento foi consultado ou cadastrado com sucesso
 
@@ -161,23 +157,23 @@ Fluxo Principal (Cadastro):
 
 Fluxo Alternativo (Alteração):
 
-a) O Usuário seleciona "Alterar receita".<br>
-b) O Sistema exibe receitas cadastradas.<br>
-c) O Usuário escolhe uma receita.<br>
-d) O Usuário edita dados (nome ou ingredientes).<br>
-e) O Sistema valida e salva alterações.<br>
+ a) O Usuário seleciona "Alterar receita".<br>
+ b) O Sistema exibe receitas cadastradas.<br>
+ c) O Usuário escolhe uma receita.<br>
+ d) O Usuário edita dados (nome ou ingredientes).<br>
+ e) O Sistema valida e salva alterações.<br>
 
 Fluxo Alternativo (Exclusão):
 
-a) O Usuário seleciona "Excluir receita".<br>
-b) O Sistema lista receitas cadastradas.<br>
-c) O Usuário seleciona uma receita.<br>
-e) O Sistema solicita confirmação e exclui a receita.<br>
+ a) O Usuário seleciona "Excluir receita".<br>
+ b) O Sistema lista receitas cadastradas.<br>
+ c) O Usuário seleciona uma receita.<br>
+ e) O Sistema solicita confirmação e exclui a receita.<br>
 
 Fluxo Alternativo (Busca):
 
-a) O Usuário digita o nome da receita.<br>
-b) O Sistema exibe os resultados encontrados.<br>
+ a) O Usuário digita o nome da receita.<br>
+ b) O Sistema exibe os resultados encontrados.<br>
 
 Pós-condições: Receita cadastrada, alterada, excluída ou buscada com sucesso.
 
