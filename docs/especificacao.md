@@ -390,6 +390,8 @@ d) O Sistema valida e salva as alterações ou remove a meta.
 
 **Pós-condições:** Publicação de personal trainer criada, alterada ou excluída com sucesso.
 
+---
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
@@ -401,6 +403,8 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 ### 3.4.4 Descrições das Classes 
 
+# class diagram
+
 | # | Nome | Descrição |
 | --- | --- | --- |
 | 1 | **Usuario** | Classe base que representa qualquer usuário do sistema. |
@@ -408,11 +412,12 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 | 3 | **UsuarioComum** | Usuário que registra alimentos, receitas, consumo e metas pessoais. |
 | 4 | **Nutricionista** | Profissional que pode publicar conteúdos nutricionais e receitas. |
 | 5 | **PersonalTrainer** | Profissional que pode publicar treinos e orientações físicas. |
-| 6 | **Perfil** | Contém informações pessoais, restrições alimentares e preferências. |
+| 6 | **Perfil** | Contém informações pessoais, restrições alimentares e preferências do usuário. |
 | 7 | **Meta** | Objetivos definidos pelo usuário (peso, glicemia, ingestão de água etc.). |
 | 8 | **Alimento** | Item com dados nutricionais (macro e micronutrientes). |
-| 9 | **Receita** | Conjunto de ingredientes formando um prato. |
-| 10 | **Ingrediente** | Representa um alimento dentro de uma receita, com quantidade. |
-| 11 | **Refeicao** | Agrupamento de alimentos/receitas em horários (ex: café da manhã). |
-| 12 | **PlanoAlimentar** | Conjunto de refeições organizadas em um período (diário/semana). |
-| 13 | **Publicacao** | Conteúdo criado por nutricionista ou personal trainer. |
+| 9 | **Receita** | Conjunto de ingredientes formando um prato ou preparação culinária. |
+| 10 | **ReceitaIngrediente** | Representa a relação entre uma receita e um alimento, permitindo especificar a quantidade de cada ingrediente. |
+| 11 | **Refeicao** | Agrupamento de alimentos e receitas em horários ou momentos do dia (ex.: café da manhã). |
+| 12 | **RefeicaoItem** | Representa um item dentro de uma refeição, que pode ser um alimento ou uma receita, com quantidade associada. |
+| 13 | **PlanoAlimentar** | Conjunto de refeições organizadas em um período específico (diário, semanal). |
+| 14 | **Publicacao** | Conteúdo criado por nutricionista ou personal trainer, como orientações, receitas ou treinos. |
