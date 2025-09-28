@@ -80,50 +80,38 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
-
 #### Gerenciar Perfil de Usuário (CSU01)
 
-Sumário: Usuário realiza o cadastro, alteração ou exclusão do perfil.
+Sumário: Usuário realiza o cadastro, alteração ou exclusão do perfil, incluindo dados pessoais e restrições alimentares.
 
 Ator Primário: Usuário.
-
-Pré-condições: O usuário deve ser validado pelo Sistema.
-
+Pré-condições: O usuário deve estar autenticado no sistema.
 Fluxo Principal:
 
-1) 	O Usuário acessa o sistema,
-2) 	O Sistema apresenta as operações que podem ser realizadas: novo cadastro, alteração de um cadastro existente, exclusão do perfil ou consulta,
-3) 	O Usuário seleciona a operação cadastro de perfil,
-4)  O Sistema apresenta um formulário solicitando dados: nome, e-mail, telefone, endereço, peso atual, peso ideal, restrições alimentares, rotina de exercícios,
-5)  O Usuário preenche o formulário solicitado,
-6)  O sistema valida os dados,
-7)  Se os dados forem validados com sucesso o perfil é criado, caso alguma informação esteja incompleta o sistema notifica o erro e solicita correção.
+O Usuário acessa a funcionalidade de Gerenciar Perfil.
+O Sistema apresenta as opções: cadastrar, alterar ou excluir perfil.
+O Usuário escolhe a opção desejada.
+O Sistema solicita os dados necessários (nome, e-mail, peso, restrições alimentares, tipo de perfil etc.).
+O Usuário preenche ou confirma as informações.
+O Sistema valida os dados.
+Se válidos, a operação é concluída com sucesso.
 
-Fluxo Alternativo (2): Alteração de cadastro.
+Fluxo Alternativo (Cadastro incompleto):
+Se algum campo obrigatório não for preenchido corretamente, o Sistema solicita correção.
 
-a)	O usuário seleciona alteração de cadastro. <br>
-b)	O Sistema apresenta o dados atuais do perfil. <br>
-c)	O Usuário realiza a as alterações desejadas. <br>
-d)	O Sistema valida os novos dados. <br>
-e)	Se os dados forem validados com sucesso o perfil é alterado, caso alguma informação esteja incompleta o sistema notifica o erro e solicita correção. <br>
+Fluxo Alternativo (Alteração):
+O Usuário seleciona "Alterar".
+O Sistema mostra os dados atuais.
+O Usuário altera as informações.
+O Sistema valida e salva as alterações.
 
-Fluxo Alternativo (3): Exclusão de cadastro.
+Fluxo Alternativo (Exclusão):
+O Usuário seleciona "Excluir".
+O Sistema solicita confirmação.
+O Usuário confirma.
+O Sistema remove o perfil.
 
-a)	O usuário seleciona exclusão de cadastro. <br>
-b)	O Sistema solicita a confirmação da ação. <br>
-c)	O Usuário confirma a ação. <br>
-d)	O Sistema realiza a exclusão do perfil. <br>
-
------
-Fluxo Alternativo (3): Consulta
-
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
-
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+Pós-condições: O perfil foi cadastrado, alterado ou excluído.
 
 ### 3.4.3 Diagrama de Classes 
 
