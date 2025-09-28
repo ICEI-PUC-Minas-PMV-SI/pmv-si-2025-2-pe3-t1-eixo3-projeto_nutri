@@ -90,27 +90,44 @@ Pré-condições: O usuário deve estar autenticado no sistema
 Fluxo Principal:
 
 O Usuário acessa a funcionalidade de Gerenciar Perfil.
+
 O Sistema apresenta as opções: cadastrar, alterar ou excluir perfil.
+
 O Usuário escolhe a opção desejada.
+
 O Sistema solicita os dados necessários (nome, e-mail, peso, restrições alimentares, tipo de perfil etc.).
+
 O Usuário preenche ou confirma as informações.
+
 O Sistema valida os dados.
+
 Se válidos, a operação é concluída com sucesso.
 
 Fluxo Alternativo (Cadastro incompleto):
+
 Se algum campo obrigatório não for preenchido corretamente, o Sistema solicita correção.
 
 Fluxo Alternativo (Alteração):
+
 O Usuário seleciona "Alterar".
+
 O Sistema mostra os dados atuais.
+
 O Usuário altera as informações.
+
 O Sistema valida e salva as alterações.
 
+
 Fluxo Alternativo (Exclusão):
+
 O Usuário seleciona "Excluir".
+
 O Sistema solicita confirmação.
+
 O Usuário confirma.
+
 O Sistema remove o perfil.
+
 
 Pós-condições: O perfil foi cadastrado, alterado ou excluído.
 
