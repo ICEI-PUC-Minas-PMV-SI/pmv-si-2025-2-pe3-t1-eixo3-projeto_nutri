@@ -76,7 +76,7 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![image](./assets/useCaseDiagram.png)
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -218,22 +218,206 @@ Fluxo Alternativo (Dados insuficientes):
 a) Se não houver informações nutricionais completas, o Sistema informa que não é possível calcular.<br>
 b) Pós-condições: O valor nutricional é exibido ao usuário.<br>
 
+---
+
+### Montar Refeições e Planos Alimentares (CSU05)
+
+**Sumário:** Usuário cria refeições diárias ou planos alimentares combinando receitas e alimentos.
+
+**Ator Primário:** Usuário.
+
+**Pré-condições:** O usuário deve estar autenticado e ter receitas/alimentos cadastrados.
+
+**Fluxo Principal:**
+
+1. O Usuário acessa a funcionalidade de Montar Refeições e Planos Alimentares.
+2. O Sistema apresenta opções de criação de refeições ou planos semanais.
+3. O Usuário seleciona refeições e adiciona receitas/alimentos às refeições.
+4. O Sistema valida e salva o plano alimentar.
+
+**Fluxo Alternativo (Edição de plano):**
+
+a) O Usuário escolhe um plano existente.
+
+b) O Sistema exibe o plano completo.
+
+c) O Usuário adiciona ou remove refeições/receitas.
+
+d) O Sistema valida e salva as alterações.
+
+**Pós-condições:** Plano alimentar criado ou atualizado com sucesso.
+
+---
+
+### Sugerir Receitas e Alimentos (CSU06)
+
+**Sumário:** Sistema oferece sugestões de receitas/alimentos baseadas em metas, preferências, restrições e ingredientes disponíveis.
+
+**Ator Primário:** Usuário.
+
+**Pré-condições:** O usuário deve estar autenticado e ter perfil e preferências cadastradas.
+
+**Fluxo Principal:**
+
+1. O Usuário acessa a funcionalidade de Sugestão de Receitas e Alimentos.
+2. O Sistema verifica perfil, restrições e metas do usuário.
+3. O Sistema apresenta sugestões de receitas/alimentos compatíveis.
+4. O Usuário pode selecionar ou salvar as sugestões.
+
+**Pós-condições:** Sugestões apresentadas e, se desejado, salvas no plano alimentar.
+
+---
+
+### Gerenciar Metas (CSU07)
+
+**Sumário:** Usuário define metas alimentares, nutricionais e de saúde (glicemia, peso, etc.).
+
+**Ator Primário:** Usuário.
+
+**Pré-condições:** O usuário deve estar autenticado.
+
+**Fluxo Principal:**
+
+1. O Usuário acessa a funcionalidade de Gerenciar Metas.
+2. O Sistema apresenta opções de criação, alteração ou exclusão de metas.
+3. O Usuário define metas desejadas (ex: calorias diárias, ingestão de água).
+4. O Sistema valida e salva as metas.
+
+**Fluxo Alternativo (Alteração/Exclusão):**
+
+a) O Usuário seleciona uma meta existente.
+
+b) O Sistema exibe os detalhes da meta.
+
+c) O Usuário altera ou exclui a meta.
+
+d) O Sistema valida e salva as alterações ou remove a meta.
+
+**Pós-condições:** Metas definidas, alteradas ou removidas com sucesso.
+
+---
+
+### Registrar Consumo Alimentar (CSU08)
+
+**Sumário:** Usuário registra alimentos consumidos em cada refeição do dia.
+
+**Ator Primário:** Usuário.
+
+**Pré-condições:** O usuário deve estar autenticado e ter refeições cadastradas.
+
+**Fluxo Principal:**
+
+1. O Usuário acessa a funcionalidade de Registro de Consumo Alimentar.
+2. O Sistema apresenta as refeições do dia.
+3. O Usuário seleciona a refeição e adiciona os alimentos consumidos.
+4. O Sistema valida e salva o registro.
+
+**Pós-condições:** Consumo alimentar registrado com sucesso.
+
+---
+
+### Registrar Água Diária (CSU09)
+
+**Sumário:** Usuário registra a quantidade de água ingerida ao longo do dia.
+
+**Ator Primário:** Usuário.
+
+**Pré-condições:** O usuário deve estar autenticado.
+
+**Fluxo Principal:**
+
+1. O Usuário acessa a funcionalidade de Registro de Água Diária.
+2. O Sistema solicita a quantidade ingerida.
+3. O Usuário informa a quantidade.
+4. O Sistema valida e salva o registro.
+
+**Pós-condições:** Consumo de água registrado com sucesso.
+
+---
+
+### Gerenciar Perfil de Nutricionista (CSU10)
+
+**Sumário:** Nutricionista cadastra, altera ou exclui seu perfil no sistema.
+
+**Ator Primário:** Nutricionista.
+
+**Pré-condições:** O usuário deve estar autenticado.
+
+**Fluxo Principal:**
+
+1. O Nutricionista acessa a funcionalidade de Gerenciar Perfil de Nutricionista.
+2. O Sistema apresenta as opções: cadastrar, alterar ou excluir perfil.
+3. O Nutricionista preenche ou altera as informações necessárias.
+4. O Sistema valida e salva as alterações.
+
+**Pós-condições:** Perfil de nutricionista cadastrado, alterado ou excluído.
+
+---
+
+### Publicações de Nutricionistas (CSU11)
+
+**Sumário:** Nutricionista publica orientações, dicas ou receitas para os usuários.
+
+**Ator Primário:** Nutricionista.
+
+**Pré-condições:** O nutricionista deve estar autenticado e possuir perfil cadastrado.
+
+**Fluxo Principal:**
+
+1. O Nutricionista acessa a funcionalidade de Publicações.
+2. O Sistema apresenta opções de criar, alterar ou excluir publicações.
+3. O Nutricionista cria a publicação.
+4. O Sistema valida e salva a publicação.
+
+**Pós-condições:** Publicação de nutricionista criada, alterada ou excluída com sucesso.
+
+---
+
+### Publicações de Personal Trainer (CSU12)
+
+**Sumário:** Personal Trainer publica orientações sobre exercícios físicos e execução de atividades.
+
+**Ator Primário:** Personal Trainer.
+
+**Pré-condições:** O Personal Trainer deve estar autenticado.
+
+**Fluxo Principal:**
+
+1. O Personal Trainer acessa a funcionalidade de Publicações.
+2. O Sistema apresenta opções de criar, alterar ou excluir publicações.
+3. O Personal Trainer cria a publicação.
+4. O Sistema valida e salva a publicação.
+
+**Pós-condições:** Publicação de personal trainer criada, alterada ou excluída com sucesso.
+
+---
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
 
 #### Figura 2: Diagrama de Classes do Sistema.
- 
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
+
+![image](./assets//classDiagram.png)
 
 
 ### 3.4.4 Descrições das Classes 
 
+# class diagram
+
 | # | Nome | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| --- | --- | --- |
+| 1 | **Usuario** | Classe base que representa qualquer usuário do sistema. |
+| 2 | **Administrador** | Usuário responsável por gerenciar e manter o sistema. |
+| 3 | **UsuarioComum** | Usuário que registra alimentos, receitas, consumo e metas pessoais. |
+| 4 | **Nutricionista** | Profissional que pode publicar conteúdos nutricionais e receitas. |
+| 5 | **PersonalTrainer** | Profissional que pode publicar treinos e orientações físicas. |
+| 6 | **Perfil** | Contém informações pessoais, restrições alimentares e preferências do usuário. |
+| 7 | **Meta** | Objetivos definidos pelo usuário (peso, glicemia, ingestão de água etc.). |
+| 8 | **Alimento** | Item com dados nutricionais (macro e micronutrientes). |
+| 9 | **Receita** | Conjunto de ingredientes formando um prato ou preparação culinária. |
+| 10 | **ReceitaIngrediente** | Representa a relação entre uma receita e um alimento, permitindo especificar a quantidade de cada ingrediente. |
+| 11 | **Refeicao** | Agrupamento de alimentos e receitas em horários ou momentos do dia (ex.: café da manhã). |
+| 12 | **RefeicaoItem** | Representa um item dentro de uma refeição, que pode ser um alimento ou uma receita, com quantidade associada. |
+| 13 | **PlanoAlimentar** | Conjunto de refeições organizadas em um período específico (diário, semanal). |
+| 14 | **Publicacao** | Conteúdo criado por nutricionista ou personal trainer, como orientações, receitas ou treinos. |

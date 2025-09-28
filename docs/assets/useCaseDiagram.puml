@@ -1,0 +1,63 @@
+@startuml
+left to right direction
+
+' Estilo dos atores
+skinparam actorStyle stickman
+skinparam actorBackgroundColor #F8FF9C
+skinparam actorBorderColor black
+skinparam actorFontColor black
+skinparam actorFontSize 12
+
+' Estilo dos casos de uso
+skinparam usecaseBackgroundColor #F8FF9C
+skinparam usecaseBorderColor black
+skinparam usecaseFontSize 12
+skinparam usecaseFontColor black
+skinparam usecaseRoundCorner 20
+
+' Estilo das retângulos de sistema
+skinparam rectangle {
+  BorderColor black
+  FontSize 12
+}
+
+actor "Administrador" as A1
+actor "Usuário Comum" as A2
+actor "Nutricionista" as A3
+actor "Personal Trainer" as A4
+
+rectangle "Sistema NUTRI" {
+    usecase "Gerenciar Perfil de Usuário" as UC1
+    usecase "Gerenciar Alimentos" as UC2
+    usecase "Gerenciar Receitas" as UC3
+    usecase "Analisar Valor Nutricional" as UC4
+    usecase "Montar Refeições e Planos Alimentares" as UC5
+    usecase "Sugerir Receitas e Alimentos" as UC6
+    usecase "Gerenciar Metas" as UC7
+    usecase "Registrar Consumo Alimentar" as UC8
+    usecase "Registrar Água Diária" as UC9
+    usecase "Gerenciar Perfil de Nutricionista" as UC10
+    usecase "Publicações de Nutricionistas" as UC11
+    usecase "Publicações de Personal Trainer" as UC12
+}
+
+A2 -- UC1
+A2 -- UC2
+A2 -- UC3
+A2 -- UC4
+A2 -- UC5
+A2 -- UC6
+A2 -- UC7
+A2 -- UC8
+A2 -- UC9
+
+A3 -- UC10
+A3 -- UC11
+
+A4 -- UC12
+
+A1 -- UC1
+A1 -- UC2
+A1 -- UC3
+A1 -- UC10
+@enduml

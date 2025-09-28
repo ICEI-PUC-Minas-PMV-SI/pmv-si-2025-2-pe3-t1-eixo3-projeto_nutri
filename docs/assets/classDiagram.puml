@@ -1,0 +1,56 @@
+@startuml
+skinparam class {
+  BackgroundColor White
+  ArrowColor Black
+  BorderColor Black
+}
+
+' Usuários
+class Usuario {}
+class Administrador {}
+class UsuarioComum {}
+class Nutricionista {}
+class PersonalTrainer {}
+
+' Perfil e Metas
+class Perfil {}
+class Meta {}
+
+' Alimentação
+class Alimento {}
+class Receita {}
+class ReceitaIngrediente {}
+class Refeicao {}
+class RefeicaoItem {}
+class PlanoAlimentar {}
+
+' Publicações
+class Publicacao {}
+
+' Heranças
+Usuario <|-- Administrador
+Usuario <|-- UsuarioComum
+Usuario <|-- Nutricionista
+Usuario <|-- PersonalTrainer
+
+' Relações de usuário
+Usuario "1" --> "1" Perfil : possui >
+Usuario "1" --> "0..*" Meta : define >
+UsuarioComum "1" --> "0..*" Refeicao : registra >
+UsuarioComum "1" --> "0..*" PlanoAlimentar : monta >
+
+' Relações de alimentação
+Receita "1" --> "1..*" ReceitaIngrediente : possui >
+ReceitaIngrediente "1" --> "1" Alimento : contém >
+
+Receita "1" --> "0..*" RefeicaoItem : pode estar em >
+Alimento "1" --> "0..*" RefeicaoItem : pode estar em >
+Refeicao "1" --> "1..*" RefeicaoItem : é composta por >
+
+PlanoAlimentar "1" --> "1..*" Refeicao : organiza >
+
+' Publicações
+Nutricionista "1" --> "0..*" Publicacao : publica >
+PersonalTrainer "1" --> "0..*" Publicacao : publica >
+
+@enduml
