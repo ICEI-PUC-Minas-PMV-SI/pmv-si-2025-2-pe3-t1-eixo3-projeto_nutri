@@ -37,7 +37,7 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Perfil de Usuário |	Permitir o cadastro, alteração e exclusão do perfil do usuário, incluindo dados pessoais e restrições alimentares. |
+| RF1 | Gerenciar Perfil de Usuário |	Permitir o cadastro, alteração, consulta e exclusão do perfil do usuário, incluindo dados pessoais e restrições alimentares. |
 | RF2 |	Gerenciar Alimentos	| 	Permitir a consulta de alimentos em uma base de dados nutricional e o cadastro de novos alimentos pelo usuário. |
 | RF3	| Gerenciar Receitas |	Permitir que o usuário cadastre, altere, exclua e busque receitas, compondo-as a partir de uma lista de ingredientes e quantidades. |
 | RF4 |	Analisar Valor Nutricional	| Calcular e exibir o valor nutricional (calorias, macronutrientes, fibras, vitaminas, etc.) de alimentos, receitas, refeições e planos alimentares. |
@@ -83,7 +83,7 @@ Como observado no diagrama de casos de uso da Figura 1, a secretária poderá ge
 
 #### Gerenciar Perfil de Usuário (CSU01)
 
-Sumário: Usuário realiza o cadastro, alteração ou exclusão do perfil, incluindo dados pessoais e restrições alimentares.
+Sumário: Usuário realiza o cadastro, alteração, consulta ou exclusão do perfil, incluindo dados pessoais e restrições alimentares.
 
 Ator Primário: Usuário.
 
@@ -92,7 +92,7 @@ Pré-condições: O usuário deve estar autenticado no sistema
 Fluxo Principal:
 
 1) O Usuário acessa a funcionalidade de Gerenciar Perfil.
-2) O Sistema apresenta as opções: cadastrar, alterar ou excluir perfil.
+2) O Sistema apresenta as opções: cadastrar, alterar, consultar ou excluir perfil.
 3) O Usuário escolhe a opção desejada.
 4) O Sistema solicita os dados necessários (nome, e-mail, peso, restrições alimentares, tipo de perfil etc.).
 5) O Usuário preenche ou confirma as informações.
@@ -108,6 +108,14 @@ Fluxo Alternativo (Alteração):
  c) O Usuário altera as informações.<br>
  d) O Sistema valida e salva as alterações.<br>
  
+---
+
+Fluxo Alternativo (Consulta):
+
+ a) O Usuário seleciona "Consultar". <br>
+ b) O Sistema mostra os dados atuais.<br>
+ c) O Usuário visualiza as informações.<br>
+  
 ---
 
 Fluxo Alternativo (Exclusão):
