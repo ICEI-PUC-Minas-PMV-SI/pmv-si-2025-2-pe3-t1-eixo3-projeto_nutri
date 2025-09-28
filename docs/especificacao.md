@@ -88,6 +88,8 @@ Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema
 
+---
+
 Fluxo Principal:
 
 1) O Usuário acessa a funcionalidade de Gerenciar Perfil.
@@ -118,6 +120,8 @@ Fluxo Alternativo (Exclusão):
 
 Pós-condições: O perfil foi cadastrado, alterado ou excluído.
 
+----
+
 #### Gerenciar Alimentos (CSU02)
 
 Sumário: Usuário pode consultar alimentos existentes na base de dados ou cadastrar novos alimentos.
@@ -125,6 +129,8 @@ Sumário: Usuário pode consultar alimentos existentes na base de dados ou cadas
 Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema.
+
+---
 
 Fluxo Principal (Consulta):
 
@@ -144,6 +150,8 @@ Fluxo Alternativo (Cadastro de novo alimento)
 
 Pós-condições: O alimento foi consultado ou cadastrado com sucesso
 
+---
+
 #### Gerenciar Receitas (CSU03)
 
 Sumário: Usuário pode cadastrar, alterar, excluir e buscar receitas, montando-as a partir de ingredientes e quantidades.
@@ -151,6 +159,8 @@ Sumário: Usuário pode cadastrar, alterar, excluir e buscar receitas, montando-
 Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema.
+
+---
 
 Fluxo Principal (Cadastro):
 
@@ -189,6 +199,8 @@ Fluxo Alternativo (Busca):
 
 Pós-condições: Receita cadastrada, alterada, excluída ou buscada com sucesso.
 
+---
+
 #### Analisar Valor Nutricional (CSU04)
 
 Sumário: O sistema calcula e exibe o valor nutricional de alimentos, receitas, refeições e planos alimentares.
@@ -197,6 +209,8 @@ Ator Primário: Usuário.
 
 Pré-condições: O usuário deve estar autenticado no sistema e ter alimentos/receitas cadastrados.
 
+---
+
 Fluxo Principal:
 
 1) O Usuário acessa a funcionalidade de Analisar Valor Nutricional.
@@ -204,6 +218,8 @@ Fluxo Principal:
 3) O Usuário seleciona a opção desejada.
 4) O Sistema calcula calorias, proteínas, carboidratos, gorduras, fibras, vitaminas, etc.
 5) O Sistema exibe o relatório nutricional.
+
+---
 
 Fluxo Alternativo (Dados insuficientes):
 
