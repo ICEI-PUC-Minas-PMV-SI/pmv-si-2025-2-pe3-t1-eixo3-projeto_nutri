@@ -98,12 +98,16 @@ Fluxo Principal:
 6) O Sistema valida os dados.
 7 Se válidos, a operação é concluída com sucesso.
 
+---
+
 Fluxo Alternativo (Alteração):
 
  a) O Usuário seleciona "Alterar". <br>
  b) O Sistema mostra os dados atuais.<br>
  c) O Usuário altera as informações.<br>
  d) O Sistema valida e salva as alterações.<br>
+ 
+---
 
 Fluxo Alternativo (Exclusão):
 
@@ -128,6 +132,8 @@ Fluxo Principal (Consulta):
 2) O Sistema exibe a lista de alimentos cadastrados.
 3) O Usuário pode pesquisar por nome ou categoria.
 4) O Sistema apresenta os resultados.
+
+---
 
 Fluxo Alternativo (Cadastro de novo alimento)
 
@@ -155,6 +161,8 @@ Fluxo Principal (Cadastro):
 5) O Usuário informa os dados.
 6) O Sistema valida e salva a receita.
 
+---
+
 Fluxo Alternativo (Alteração):
 
  a) O Usuário seleciona "Alterar receita".<br>
@@ -163,12 +171,16 @@ Fluxo Alternativo (Alteração):
  d) O Usuário edita dados (nome ou ingredientes).<br>
  e) O Sistema valida e salva alterações.<br>
 
+---
+
 Fluxo Alternativo (Exclusão):
 
  a) O Usuário seleciona "Excluir receita".<br>
  b) O Sistema lista receitas cadastradas.<br>
  c) O Usuário seleciona uma receita.<br>
  e) O Sistema solicita confirmação e exclui a receita.<br>
+
+ ---
 
 Fluxo Alternativo (Busca):
 
