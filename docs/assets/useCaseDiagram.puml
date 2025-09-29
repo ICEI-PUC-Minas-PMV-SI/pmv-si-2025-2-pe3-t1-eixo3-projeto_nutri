@@ -39,6 +39,7 @@ rectangle "Sistema NUTRI" {
     usecase "Gerenciar Perfil de Nutricionista" as UC10
     usecase "Publicações de Nutricionistas" as UC11
     usecase "Publicações de Personal Trainer" as UC12
+    usecase "Gerenciar Perfil de Personal Trainer" as CSU13
 }
 
 A2 -- UC1
@@ -55,6 +56,7 @@ A3 -- UC10
 A3 -- UC11
 
 A4 -- UC12
+A4 -- CSU13
 
 A1 -- UC1
 A1 -- UC2
