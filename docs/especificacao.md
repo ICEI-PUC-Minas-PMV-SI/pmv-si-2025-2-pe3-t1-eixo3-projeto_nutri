@@ -58,8 +58,7 @@ O NUTRI não substitui a orientação de um profissional de saúde e não realiz
 | RNF1 | Usabilidade: A interface do sistema deve ser intuitiva, acessível e responsiva, adaptando-se a diferentes tamanhos de tela (desktops, tablets e celulares). |
 | RNF2 | Desempenho: O tempo de resposta para buscas e cálculos nutricionais não deve exceder 10 segundos, garantindo uma experiência de usuário fluida. |
 | RNF3 | Confiabilidade da Base de Dados: A base de dados de alimentos deve utilizar fontes nutricionais reconhecidas e confiáveis (ex: Tabela TACO, USDA) ou APIs validadas para garantir a precisão das informações. |
-| RNF4 | Segurança:O sistema deve adotar protocolos de segurança, como HTTPS e criptografia de dados sensíveis,
- para proteger as informações dos usuários. |
+| RNF4 | Segurança:O sistema deve adotar protocolos de segurança, como HTTPS e criptografia de dados sensíveis, para proteger as informações dos usuários. |
 | RNF5 | Escalabilidade: A arquitetura do sistema deve permitir crescimento futuro, suportando aumento no número de usuários simultâneos e de dados sem perda significativa de desempenho.. |
 | RNF6| Conformidade com a LGPD: O sistema deve garantir o tratamento adequado de dados pessoais dos usuários, incluindo consentimento explícito, direito de acesso, correção e exclusão de dados, conforme as diretrizes da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). |
 
