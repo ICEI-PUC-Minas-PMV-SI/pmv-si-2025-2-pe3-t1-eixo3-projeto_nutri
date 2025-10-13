@@ -18,6 +18,25 @@
 •	4. Como o NUTRI pode Ajudá-la?
 •	Para o desafio de visibilidade: O NUTRI a coloca em um ambiente (o fórum) onde potenciais pacientes já estão buscando ativamente por informações, dando a ela uma vitrine direta para o público certo.
 •	Para o desafio de provar seu valor: Ao participar do fórum, respondendo dúvidas e compartilhando conhecimento de qualidade, ela pode demonstrar sua expertise na prática, gerando confiança e autoridade de forma orgânica.
+•	Para o desafio de orçamento: O NUTRI oferece uma forma de marketing de conteúdo com custo zero, onde sua principal ferramenta de atração é seu próprio conhecimento, permitindo que ela transforme boas respostas em potenciais consultas.<br>
+
+•	Nome: Fernando Cardoso
+•	Idade: 31 anos
+•	Profissão: Personal Trainer.
+•	Renda/Educação: Profissional autônomo com renda variável.
+•	Hábitos: Ativo nas redes sociais (Instagram) para fins profissionais, por onde faz o acompanhamento dos alunos e capta novos clientes.
+•	História: Fernando é um personal experiente e dedicado, que construiu sua carreira ajudando pessoas a transformarem seus corpos e hábitos. Apesar de já ter uma base fiel de alunos, ele percebeu que o crescimento tem sido lento e dependente de indicações. Ele atua de forma autônoma, tanto em academias parceiras quanto de maneira online, oferecendo treinos personalizados e acompanhamento remoto. No entanto busca maneiras mais eficazes de atrair novos clientes e mostrar seus resultados através de estratégias digitais.
+•	2. Objetivos
+•	Principal: Captar novos alunos.
+•	Secundário: Expandir o seu atendimento e crescer no meio digital.
+•	Pessoal: Atingir maior estabilidade financeira para poder investir em sua carreira.
+•	3. Desafios
+•	Principal: Baixíssima visibilidade em um mercado saturado de profissionais com mais experiência no meio digital.
+•	Secundário: Expandir o seu negócio e sua carteira de clientes.
+•	Operacional: Orçamento praticamente nulo para investir em marketing digital e anúncios pagos.
+•	4. Como o NUTRI pode Ajudá-lo?
+•	Para o desafio de visibilidade: O NUTRI a coloca em um ambiente (o fórum) onde potenciais pacientes já estão buscando ativamente por informações, dando a ele uma vitrine direta para o público certo.
+•	Para o desafio de expandir o seu negócio: Ao participar do fórum, respondendo dúvidas e compartilhando conhecimento de qualidade, ele pode demonstrar sua expertise na prática, gerando confiança e autoridade de forma orgânica.
 •	Para o desafio de orçamento: O NUTRI oferece uma forma de marketing de conteúdo com custo zero, onde sua principal ferramenta de atração é seu próprio conhecimento, permitindo que ela transforme boas respostas em potenciais consultas.
 
 ## 4.2 Mapa de Empatia
