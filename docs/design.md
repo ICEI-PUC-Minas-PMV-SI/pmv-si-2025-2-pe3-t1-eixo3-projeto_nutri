@@ -7,11 +7,11 @@
 •	Renda/Educação: Recém-graduada, profissional autônoma com renda variável.
 •	Hábitos: Ativa nas redes sociais (Instagram) para fins profissionais, busca se atualizar constantemente sobre novas tecnologias para contactar novos pacientes.
 •	História: Carolina é uma recém-formada, apaixonada que quer aumentar sua base de pacientes. Ela sabe que pode entregar um trabalho de qualidade, mas percebeu que apenas trabalhar com indicações não tem sido frutífero. Ela atua de forma autônoma em seu consultório e online, mas possui poucos pacientes. Devido às limitações de marketing, orçamento apertado e alta concorrência, ela precisa de uma forma de conseguir contatar novos possíveis pacientes e demonstrar seus conhecimentos de forma eficaz.
-•	2. Objetivos
+•	2. Objetivos:
 •	Principal: Captar seus primeiros pacientes de forma consistente.
 •	Secundário: Construir uma reputação online e ser vista como uma profissional confiável e conhecedora.
 •	Pessoal: Alcançar estabilidade financeira para poder investir em sua carreira e manter seu consultório.
-•	3. Desafios
+•	3. Desafios:
 •	Principal: Baixíssima visibilidade em um mercado saturado de profissionais com mais tempo de carreira e mais seguidores.
 •	Secundário: Provar seu valor e conhecimento sem ter um portfólio robusto de "cases de sucesso" para apresentar.
 •	Operacional: Orçamento praticamente nulo para investir em marketing digital e anúncios pagos.
@@ -25,16 +25,16 @@
 •	Profissão: Personal Trainer.
 •	Renda/Educação: Profissional autônomo com renda variável.
 •	Hábitos: Ativo nas redes sociais (Instagram) para fins profissionais, por onde faz o acompanhamento dos alunos e capta novos clientes.
-•	História: Fernando é um personal experiente e dedicado, que construiu sua carreira ajudando pessoas a transformarem seus corpos e hábitos. Apesar de já ter uma base fiel de alunos, ele percebeu que o crescimento tem sido lento e dependente de indicações. Ele atua de forma autônoma, tanto em academias parceiras quanto de maneira online, oferecendo treinos personalizados e acompanhamento remoto. No entanto busca maneiras mais eficazes de atrair novos clientes e mostrar seus resultados através de estratégias digitais.
-•	2. Objetivos
+1. História: Fernando é um personal experiente e dedicado, que construiu sua carreira ajudando pessoas a transformarem seus corpos e hábitos. Apesar de já ter uma base fiel de alunos, ele percebeu que o crescimento tem sido lento e dependente de indicações. Ele atua de forma autônoma, tanto em academias parceiras quanto de maneira online, oferecendo treinos personalizados e acompanhamento remoto. No entanto busca maneiras mais eficazes de atrair novos clientes e mostrar seus resultados através de estratégias digitais.
+2. Objetivos:
 •	Principal: Captar novos alunos.
 •	Secundário: Expandir o seu atendimento e crescer no meio digital.
 •	Pessoal: Atingir maior estabilidade financeira para poder investir em sua carreira.
-•	3. Desafios
+3. Desafios:
 •	Principal: Baixíssima visibilidade em um mercado saturado de profissionais com mais experiência no meio digital.
 •	Secundário: Expandir o seu negócio e sua carteira de clientes.
 •	Operacional: Orçamento praticamente nulo para investir em marketing digital e anúncios pagos.
-•	4. Como o NUTRI pode Ajudá-lo?
+4. Como o NUTRI pode Ajudá-lo?
 •	Para o desafio de visibilidade: O NUTRI a coloca em um ambiente (o fórum) onde potenciais pacientes já estão buscando ativamente por informações, dando a ele uma vitrine direta para o público certo.
 •	Para o desafio de expandir o seu negócio: Ao participar do fórum, respondendo dúvidas e compartilhando conhecimento de qualidade, ele pode demonstrar sua expertise na prática, gerando confiança e autoridade de forma orgânica.
 •	Para o desafio de orçamento: O NUTRI oferece uma forma de marketing de conteúdo com custo zero, onde sua principal ferramenta de atração é seu próprio conhecimento, permitindo que ela transforme boas respostas em potenciais consultas.
@@ -44,12 +44,12 @@ Nome: Cintia Yong
 •	Profissão: Professora Infantil.
 •	Renda/Educação: Professora recém formada, entrando no mercado de trabalho e conquistando a estabilidade financeira.
 •	Hábitos: Trabalha e estuda na maior parte do dia, com rotina corrida e pouco tempo disponível para se exercitar. Costuma fazer refeições rápidas entre os intervalos e busca praticidade no dia a dia.
-•	História: Cintia sempre foi dedicada aos estudos e à carreira, mas, ao começar a trabalhar em tempo integral, percebeu que sua rotina sedentária e alimentação desregrada começaram a afetar seu bem-estar. Ela sente falta de energia, tem dificuldades para manter uma rotina equilibrada e quer aprender a cuidar melhor de si sem precisar abrir mão do tempo que dedica ao trabalho e à pós-graduação. Agora, busca um acompanhamento prático que ajude a equilibrar alimentação saudável e atividades físicas de forma realista.
-•	2. Objetivos
+1. História: Cintia sempre foi dedicada aos estudos e à carreira, mas, ao começar a trabalhar em tempo integral, percebeu que sua rotina sedentária e alimentação desregrada começaram a afetar seu bem-estar. Ela sente falta de energia, tem dificuldades para manter uma rotina equilibrada e quer aprender a cuidar melhor de si sem precisar abrir mão do tempo que dedica ao trabalho e à pós-graduação. Agora, busca um acompanhamento prático que ajude a equilibrar alimentação saudável e atividades físicas de forma realista.
+2. Objetivos:
 •	Principal: Melhorar a alimentação e adotar hábitos saudáveis que caibam na rotina.
 •	Secundário: Perder peso gradualmente e ganhar disposição para o dia a dia.
 •	Pessoal: Sentir-se bem consigo mesma, aumentar a autoestima e conquistar mais confiança com o próprio corpo.
-•	3. Desafios
+3. Desafios:
 •	Principal: Falta de tempo para preparar refeições equilibradas e praticar exercícios.
 •	Secundário: Dificuldade em manter constância por conta da rotina cansativa e dos horários irregulares.
 •	Operacional: Não saber exatamente o que comer, em que quantidade e como adaptar receitas simples e saudáveis à sua rotina.
@@ -57,6 +57,26 @@ Nome: Cintia Yong
 •	Para o desafio de tempo: O NUTRI oferece planos alimentares rápidos e personalizados, com receitas práticas que ficam prontas em poucos minutos. Além disso, o app ajuda Cíntia a organizar sua rotina, sugerindo horários ideais para refeições e treinos curtos que cabem entre o trabalho e os estudos.
 •	Para o desafio de constância: Com lembretes inteligentes, acompanhamento diário e metas pequenas e realistas, o NUTRI mantém ela motivada a continuar mesmo nos dias mais corridos.
 •	Para o desafio operacional: O aplicativo simplifica o processo de cuidar da saúde: ensina combinações equilibradas de alimentos, oferece listas de compras e orienta passo a passo o preparo das refeições.
+
+Nome: Camila Barbosa
+•	Idade: 50 anos
+•	Profissão: Advogada.
+•	Renda/Educação: Pós-graduada em Direito Civil; possui boa estabilidade financeira e rotina profissional intensa.
+•   Hábitos: Camila passa a maior parte do dia no escritório ou em audiências. Costuma almoçar fora ou pedir delivery, e muitas vezes pula refeições. Gosta de vinhos e jantares com amigos nos fins de semana e de caminhadas leves.
+1. História: Depois dos 50, Camila começou a perceber mudanças no corpo — metabolismo mais lento, ganho de peso abdominal e mais cansaço. Já tentou algumas dietas, mas nenhuma se manteve por muito tempo.
+Agora, busca uma forma mais prática e realista de cuidar da alimentação e da saúde, sem precisar abrir mão de sua rotina ou dos pequenos prazeres do dia a dia. Quer se sentir mais disposta e confiante, tanto na vida profissional quanto pessoal.
+2. Objetivos:
+•	Principal: Melhorar a disposição através da realização de exercícios físicos.
+•	Secundário: Aprender a se alimentar melhor mesmo com pouco tempo, trocando o delivery por receitas simples e equilibradas.
+•	Pessoal: Retomar o controle de sua saúde e da autoestima.
+3. Desafios:
+•	Principal: Falta de tempo para preparar refeições saudáveis e se exercitar regularmente.
+•	Secundário: Dificuldade em iniciar uma rotina de exercícios, por não saber como começar.
+•	Operacional: Não ter o auxílio de profissionais para lhe orientar sobre os processos.
+4. Como o NUTRI pode Ajudá-lo?
+•	Para o desafio de tempo: O aplicativo oferece planos alimentares rápidos e personalizados, com receitas práticas que ficam prontas em poucos minutos.
+•	Para o desafio de inicíar: O aplicativo oferece rotinas de exercícios e planos alimentares acessiveis e práticos para começar o processo de forma leve e equilibrada.
+•	Para o desafio operacional: O aplicativo fornece o acompanhamento o orientação de profissionais das áreas, que podem fazer um atendimento mais direcionado e personalisado.
 
 ## 4.2 Mapa de Empatia
 Este mapa de empatia reflete a mentalidade de uma profissional talentosa, mas que ainda luta para encontrar seu espaço no mercado.
