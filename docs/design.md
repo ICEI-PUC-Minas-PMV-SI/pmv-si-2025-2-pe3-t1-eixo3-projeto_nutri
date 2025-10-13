@@ -6,16 +6,16 @@
 •	Profissão: Nutricionista Clínica e Esportiva
 •	Renda/Educação: Recém-graduada, profissional autônoma com renda variável.
 •	Hábitos: Ativa nas redes sociais (Instagram) para fins profissionais, busca se atualizar constantemente sobre novas tecnologias para contactar novos pacientes.
-•	História: Carolina é uma recém-formada, apaixonada que quer aumentar sua base de pacientes. Ela sabe que pode entregar um trabalho de qualidade, mas percebeu que apenas trabalhar com indicações não tem sido frutífero. Ela atua de forma autônoma em seu consultório e online, mas possui poucos pacientes. Devido às limitações de marketing, orçamento apertado e alta concorrência, ela precisa de uma forma de conseguir contatar novos possíveis pacientes e demonstrar seus conhecimentos de forma eficaz.
-•	2. Objetivos:
+1. História: Carolina é uma recém-formada, apaixonada que quer aumentar sua base de pacientes. Ela sabe que pode entregar um trabalho de qualidade, mas percebeu que apenas trabalhar com indicações não tem sido frutífero. Ela atua de forma autônoma em seu consultório e online, mas possui poucos pacientes. Devido às limitações de marketing, orçamento apertado e alta concorrência, ela precisa de uma forma de conseguir contatar novos possíveis pacientes e demonstrar seus conhecimentos de forma eficaz.
+2. Objetivos:
 •	Principal: Captar seus primeiros pacientes de forma consistente.
 •	Secundário: Construir uma reputação online e ser vista como uma profissional confiável e conhecedora.
 •	Pessoal: Alcançar estabilidade financeira para poder investir em sua carreira e manter seu consultório.
-•	3. Desafios:
+3. Desafios:
 •	Principal: Baixíssima visibilidade em um mercado saturado de profissionais com mais tempo de carreira e mais seguidores.
 •	Secundário: Provar seu valor e conhecimento sem ter um portfólio robusto de "cases de sucesso" para apresentar.
 •	Operacional: Orçamento praticamente nulo para investir em marketing digital e anúncios pagos.
-•	4. Como o NUTRI pode Ajudá-la?
+4. Como o NUTRI pode Ajudá-la?
 •	Para o desafio de visibilidade: O NUTRI a coloca em um ambiente (o fórum) onde potenciais pacientes já estão buscando ativamente por informações, dando a ela uma vitrine direta para o público certo.
 •	Para o desafio de provar seu valor: Ao participar do fórum, respondendo dúvidas e compartilhando conhecimento de qualidade, ela pode demonstrar sua expertise na prática, gerando confiança e autoridade de forma orgânica.
 •	Para o desafio de orçamento: O NUTRI oferece uma forma de marketing de conteúdo com custo zero, onde sua principal ferramenta de atração é seu próprio conhecimento, permitindo que ela transforme boas respostas em potenciais consultas.<br>
