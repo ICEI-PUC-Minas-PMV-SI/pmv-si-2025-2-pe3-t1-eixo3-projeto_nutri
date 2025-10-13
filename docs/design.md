@@ -39,6 +39,25 @@
 •	Para o desafio de expandir o seu negócio: Ao participar do fórum, respondendo dúvidas e compartilhando conhecimento de qualidade, ele pode demonstrar sua expertise na prática, gerando confiança e autoridade de forma orgânica.
 •	Para o desafio de orçamento: O NUTRI oferece uma forma de marketing de conteúdo com custo zero, onde sua principal ferramenta de atração é seu próprio conhecimento, permitindo que ela transforme boas respostas em potenciais consultas.
 
+Nome: Cintia Yong
+•	Idade: 24 anos
+•	Profissão: Professora Infantil.
+•	Renda/Educação: Professora recém formada, entrando no merdaco de trabalho e conquintando a estabilidade financeira.
+•	Hábitos: TTrabalha e estuda na maior parte do dia, com rotina corrida e pouco tempo disponível para se exercitar. Costuma fazer refeições rápidas entre os intervalos e busca praticidade no dia a dia.
+•	História: Cintia sempre foi dedicada aos estudos e à carreira, mas, ao começar a trabalhar em tempo integral, percebeu que sua rotina sedentária e alimentação desregrada começaram a afetar seu bem-estar. Ela sente falta de energia, tem dificuldades para manter uma rotina equilibrada e quer aprender a cuidar melhor de si sem precisar abrir mão do tempo que dedica ao trabalho e à pós-graduação. Agora, busca um acompanhamento prático que ajude a equilibrar alimentação saudável e atividades físicas de forma realista.
+•	2. Objetivos
+•	Principal: Melhorar a alimentação e adotar hábitos saudáveis que caibam na rotina.
+•	Secundário: Perder peso gradualmente e ganhar disposição para o dia a dia.
+•	Pessoal: Sentir-se bem consigo mesma, aumentar a autoestima e conquistar mais confiança com o próprio corpo.
+•	3. Desafios
+•	Principal: Falta de tempo para preparar refeições equilibradas e praticar exercícios.
+•	Secundário: Dificuldade em manter constância por conta da rotina cansativa e dos horários irregulares.
+•	Operacional: Não saber exatamente o que comer, em que quantidade e como adaptar receitas simples e saudáveis à sua rotina.
+4. Como o NUTRI pode Ajudá-lo?
+•	Para o desafio de tempo: O NUTRI oferece planos alimentares rápidos e personalizados, com receitas práticas que ficam prontas em poucos minutos. Além disso, o app ajuda Cíntia a organizar sua rotina, sugerindo horários ideais para refeições e treinos curtos que cabem entre o trabalho e os estudos.
+•	Para o desafio de constância: Com lembretes inteligentes, acompanhamento diário e metas pequenas e realistas, o NUTRI mantém ela motivada a continuar mesmo nos dias mais corridos.
+•	Para o desafio operacional: O aplicativo simplifica o processo de cuidar da saúde: ensina combinações equilibradas de alimentos, oferece listas de compras e orienta passo a passo o preparo das refeições.
+
 ## 4.2 Mapa de Empatia
 Este mapa de empatia reflete a mentalidade de uma profissional talentosa, mas que ainda luta para encontrar seu espaço no mercado.
 1. O que PENSA E SENTE? (Suas preocupações, medos e aspirações no início da carreira.)
