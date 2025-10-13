@@ -42,8 +42,8 @@
 Nome: Cintia Yong
 •	Idade: 24 anos
 •	Profissão: Professora Infantil.
-•	Renda/Educação: Professora recém formada, entrando no merdaco de trabalho e conquintando a estabilidade financeira.
-•	Hábitos: TTrabalha e estuda na maior parte do dia, com rotina corrida e pouco tempo disponível para se exercitar. Costuma fazer refeições rápidas entre os intervalos e busca praticidade no dia a dia.
+•	Renda/Educação: Professora recém formada, entrando no mercado de trabalho e conquistando a estabilidade financeira.
+•	Hábitos: Trabalha e estuda na maior parte do dia, com rotina corrida e pouco tempo disponível para se exercitar. Costuma fazer refeições rápidas entre os intervalos e busca praticidade no dia a dia.
 •	História: Cintia sempre foi dedicada aos estudos e à carreira, mas, ao começar a trabalhar em tempo integral, percebeu que sua rotina sedentária e alimentação desregrada começaram a afetar seu bem-estar. Ela sente falta de energia, tem dificuldades para manter uma rotina equilibrada e quer aprender a cuidar melhor de si sem precisar abrir mão do tempo que dedica ao trabalho e à pós-graduação. Agora, busca um acompanhamento prático que ajude a equilibrar alimentação saudável e atividades físicas de forma realista.
 •	2. Objetivos
 •	Principal: Melhorar a alimentação e adotar hábitos saudáveis que caibam na rotina.
