@@ -248,7 +248,7 @@ A **Meta Principal** do modal é **confirmar e refinar a adição** de um item (
 * **Controle explícito:** O dropdown de Refeição e o campo de Quantidade permitem um ajuste fino da entrada antes da ação final.
 * **Compatibilidade com o usuário:** O processo simula a experiência real: "Tenho o item X. Qual refeição é? Qual a quantidade que comi?"
 
-### ✏️ Modal: Editar Item (auxiliar-editar-item.png)
+### Modal: Editar Item
 
 A **Meta Principal** deste modal é **permitir a modificação** dos dados de um item já registrado no diário alimentar. Os parâmetros editáveis são a **categoria da refeição** e a **quantidade/unidade** do item consumido, mantendo o **feedback nutricional visível** durante o processo de edição.
 
