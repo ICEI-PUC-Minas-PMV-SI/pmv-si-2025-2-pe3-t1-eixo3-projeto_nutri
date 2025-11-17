@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teste.css" />
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+
+    <script type="module">
+
+        import { apiRequest } from './js/call.js';
+
+        let lista = document.getElementById('lista');
+
+        let acoes = [
+            {
+                method:'GET',
+                url:'/usuario/'
+            },
+            {
+                method:'GET',
+                url:'/alimento/'
+            }
+        ];
+
+        for(let a of acoes){
+            let li = document.createElement('li');
+            let res = await apiRequest('/api'+a.url,{method:a.method});
+            console.log(res);
+            li.innerHTML = JSON.stringify(res);
+            lista.appendChild(li);
+        }
+
+
+
+    </script>
+</body>
+</html>

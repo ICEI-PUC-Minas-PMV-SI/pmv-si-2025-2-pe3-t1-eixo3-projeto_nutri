@@ -1,0 +1,176 @@
+[
+    {
+        "recurso": "usuario",
+        "acao": "get",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "list",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "create",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "login",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "logout",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "login",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "register",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "update",
+        "role": "usuario",
+        "owner": true
+    },
+    {
+        "recurso": "usuario",
+        "acao": "delete",
+        "role": "admin",
+        "owner": false
+    },
+    {
+        "recurso": "usuario",
+        "acao": "search",
+        "role": "usuario",
+        "owner": true
+    },
+    {
+        "recurso": "usuario",
+        "acao": "check",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "get",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "get",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "list",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "list",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "create",
+        "role": "nutri",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "update",
+        "role": "nutri",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "delete",
+        "role": "admin",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "search",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "alimento",
+        "acao": "search",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "get",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "get",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "list",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "list",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "create",
+        "role": "usuario",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "update",
+        "role": "usuario",
+        "owner": true
+    },
+    {
+        "recurso": "receita",
+        "acao": "delete",
+        "role": "admin",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "search",
+        "role": "guest",
+        "owner": false
+    },
+    {
+        "recurso": "receita",
+        "acao": "search",
+        "role": "usuario",
+        "owner": false
+    }
+]
