@@ -4,10 +4,11 @@ type ButtonProps = {
     text: string;
     handleClick: (e: any) => void
     style?: "primary" | "secondary" | "ghost"
-    size?: "lg" | "md" | "sm"
+    width?: "lg" | "md" | "sm"
+    height?: "lg" | "md"
 }
 
-export default function Button ({text, style, size, handleClick}: ButtonProps){
+export default function Button ({text, style, width, height, handleClick}: ButtonProps){
     function getButtonColor(){
         switch(style){
             case "secondary": return "bg-gray text-white"
@@ -15,19 +16,26 @@ export default function Button ({text, style, size, handleClick}: ButtonProps){
             default: return "bg-primary text-white"
         }
     }
-    function getButtonSize(){
-        switch(size){
+    function getButtonWidth(){
+        switch(width){
             case "md": return "w-36"
             case "sm": return "w-20 text-lg"
             default: return "w-60"
         }
     }
+    function getButtonHeight(){
+        switch(height){
+            case "lg": return "h-[3.25rem]"
+            default: return "h-10"
+        }
+    }
     return (
         <button 
             className={clsx(
-                "text-nowrap h-10 rounded-[0.25rem]",
+                "text-nowrap rounded-[0.25rem]",
                 getButtonColor(),
-                getButtonSize()
+                getButtonWidth(),
+                getButtonHeight()
             )}
             onClick={handleClick}
         >

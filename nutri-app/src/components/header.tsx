@@ -31,12 +31,12 @@ export default function Header(){
                                 text="Entrar"
                                 handleClick={handleRedirectLogin}
                                 style="ghost"
-                                size="md"
+                                width="md"
                             />
                             <Button 
                                 text="Criar Conta"
                                 handleClick={handleRedirectRegister}
-                                size="md"
+                                width="md"
                             />
                         </div>
                     )

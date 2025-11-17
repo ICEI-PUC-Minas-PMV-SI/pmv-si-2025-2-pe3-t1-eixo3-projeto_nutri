@@ -7,6 +7,7 @@ import communityIcon from "../../public/landingPage/communityIcon.png"
 import handsUnitedIcon2 from "../../public/landingPage/handsUnitedIcon2.png"
 import handsUnitedIcon from "../../public/landingPage/handsUnitedIcon.png"
 import usersIcon from "../../public/landingPage/usersIcon.png"
+import personUsingLaptop from "../../public/landingPage/personUsingLaptop.png"
 import Card from "@/components/landingPage/Card";
 import MetricCard from "@/components/landingPage/MetricCard";
 
@@ -35,7 +36,8 @@ export default function Home() {
 
             <Button
               text="Comece já"
-              size="md"
+              width="md"
+              height="lg"
               handleClick={handleRedirectRegister}
             />
           </div>
@@ -101,6 +103,28 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="flex justify-center items-center w-full py-12 px-72">
+        <div className="flex justify-center items-center  px-[4.5rem] gap-60">
+          <Image src={personUsingLaptop} alt="Person using a laptop" />
+          <div className="flex flex-col justify-center items-start gap-8">
+            <div className="flex flex-col justify-center items-start gap-4">
+              <h2 className="font-semibold text-4xl">
+                Tenha seus hábitos alimentares centralizados!
+              </h2>
+              <p className="text-justify">
+                Acompanhe tudo o que você come em um só lugar — de forma simples e visual. Registre suas refeições, monitore suas metas e entenda seus padrões alimentares com clareza. Nosso app ajuda você a transformar dados em consciência, tornando o cuidado com a alimentação parte natural da sua rotina.
+              </p>
+            </div>
+            <Button
+              text="comece sua jornada"
+              height="lg"
+              handleClick={handleRedirectRegister}
+            />
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 }
