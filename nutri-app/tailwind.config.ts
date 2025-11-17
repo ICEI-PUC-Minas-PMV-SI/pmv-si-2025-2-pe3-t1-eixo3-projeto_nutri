@@ -12,8 +12,10 @@ module.exports = {
         },
         'background-light': '#ffffff',
         'background-card': '#fafdff',
+        'contrast-background': '#f5f7fa',
         'text-base': '#333333',
         'stroke': '#D1D9DF',
+        'gray': '#607D8B',
         'text-muted': '#666666',
       },
 
