@@ -3,3 +3,4 @@ src/server/stats.json
 src/server/config/fb.json
 src/dist/
 src/server/dist/
+src/server/config/db.json
