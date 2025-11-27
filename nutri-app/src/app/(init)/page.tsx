@@ -2,12 +2,12 @@
 
 import Button from "@/components/form/button";
 import Image from "next/image";
-import bannerImage from "../../public/landingPage/banner.png"
-import communityIcon from "../../public/landingPage/communityIcon.png"
-import handsUnitedIcon2 from "../../public/landingPage/handsUnitedIcon2.png"
-import handsUnitedIcon from "../../public/landingPage/handsUnitedIcon.png"
-import usersIcon from "../../public/landingPage/usersIcon.png"
-import personUsingLaptop from "../../public/landingPage/personUsingLaptop.png"
+import bannerImage from "../../../public/landingPage/banner.png"
+import communityIcon from "../../../public/landingPage/communityIcon.png"
+import handsUnitedIcon2 from "../../../public/landingPage/handsUnitedIcon2.png"
+import handsUnitedIcon from "../../../public/landingPage/handsUnitedIcon.png"
+import usersIcon from "../../../public/landingPage/usersIcon.png"
+import personUsingLaptop from "../../../public/landingPage/personUsingLaptop.png"
 import Card from "@/components/landingPage/Card";
 import MetricCard from "@/components/landingPage/MetricCard";
 
@@ -18,6 +18,7 @@ export default function Home() {
   function handleRedirectLogin(){
     window.location.pathname = "/login"
   }
+
   return (
     <div className="flex flex-col w-full h-full">
 
