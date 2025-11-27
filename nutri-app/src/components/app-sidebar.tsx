@@ -1,35 +1,27 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
   CalendarCogIcon,
-  Command,
-  Frame,
   GalleryVerticalEnd,
   LayoutDashboard,
-  Map,
+  LogOut,
   MessageCircleMoreIcon,
-  PieChart,
-  Settings2,
-  SquareTerminal,
   UserCog2,
-} from "lucide-react"
+} from "lucide-react";
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/components/nav-main";
+import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
+  SidebarMenuButton,
+  SidebarMenuItem,
   SidebarRail,
-} from "@/components/ui/sidebar"
-import { Separator } from "./ui/separator"
+} from "@/components/ui/sidebar";
+import { Separator } from "./ui/separator";
 
 // This is sample data.
 const data = {
@@ -49,7 +41,7 @@ const data = {
     {
       title: "Dashboard",
       url: "/dashboard",
-      icon: LayoutDashboard
+      icon: LayoutDashboard,
     },
   ],
   social: [
@@ -69,7 +61,7 @@ const data = {
       icon: CalendarCogIcon,
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -77,15 +69,20 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
-      <Separator/>
+      <Separator />
       <SidebarContent>
-        <NavMain items={data.health} />
-        <NavMain items={data.social} />
+        <NavMain title="SAÚDE" items={data.health} />
+        <NavMain title="SOCIAL" items={data.social} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <SidebarMenuItem>
+          <SidebarMenuButton>
+            <LogOut />
+            <span>Sair</span>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }

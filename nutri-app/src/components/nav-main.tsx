@@ -8,17 +8,17 @@ import {
 } from "@/components/ui/sidebar"
 
 export function NavMain({
-  items
+  items,title
 }: {
   items: {
     title: string
     url: string
     icon?: LucideIcon
-  }[]
+  }[], title:string
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>SAÚDE</SidebarGroupLabel>
+      <SidebarGroupLabel>{title}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
             <SidebarMenuItem key={item.title}>
