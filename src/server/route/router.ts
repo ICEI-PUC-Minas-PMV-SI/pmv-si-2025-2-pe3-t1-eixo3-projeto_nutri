@@ -103,7 +103,7 @@ export class Router<TypeController extends Controller = Controller> {
 
         //this.router.get('/', (req,res,next)=>{this.checkAuthorization('list',this.controller.list,req,res,next);});
 
-        this.get('/:id','get', this.controller.get);
+        //this.get('/:id','get', this.controller.get);
 
         //this.router.get('/search/:term', (req, res, next) => {this.checkAuthorization('search', this.controller.search, req, res, next); });
         
@@ -111,7 +111,7 @@ export class Router<TypeController extends Controller = Controller> {
 
         //this.put('/:id', 'update', this.controller.update);
 
-        this.delete('/:id', 'delete', this.controller.delete);
+        //this.delete('/:id', 'delete', this.controller.delete);
         
         return this.router;
     }

@@ -38,10 +38,8 @@ export class AlimentoController extends Controller {
 
         if(alimento){
             res.send(alimento.json());
-            return;
-            
+            return;   
         }
-
         res.send({error:'Alimento não encontrado.'});
 
     }
@@ -62,7 +60,7 @@ export class AlimentoController extends Controller {
             subcategoria: data.subcategoria || null,
             nutrientes: data.nutrientes || null,
             estado: data.estado || null,
-            modificadores: data.modificadores || [],
+            receita: data.receita || null,
             //tags: data.tags || [],
             criador:null,
             imagem:null
@@ -93,6 +91,15 @@ export class AlimentoController extends Controller {
 
     }
 
+    //roda direto com put /alimento/:id, senão deve ser chamado a partir de receita
+    async updateSimples(req, res, next): Promise<any> {
+        if(req.body.receita){
+            res.send({error:'Não é possível editar diretamente. Altere a receita associada.'});
+            return;
+        }
+        return await this.update(req,res,next);
+    }
+
     async update(req, res, next): Promise<any> {
         const id: string = req.params.id;      // ID vindo da rota
         let data: JsonData = req.body;
@@ -114,8 +121,7 @@ export class AlimentoController extends Controller {
             categoria: data.categoria || null,
             subcategoria: data.subcategoria || null,
             nutrientes: data.nutrientes || null,
-            estado: data.estado || null,
-            modificadores: data.modificadores || []
+            estado: data.estado || null
         };
 
         // Se uma nova imagem foi enviada, gera novo nome
@@ -142,41 +148,7 @@ export class AlimentoController extends Controller {
     }
 
 
-    async updateImagem(req, res, next): Promise<any> {
-        const id: string = req.params.id;      // ID vindo da rota
-        
-        if (!id) {
-            res.send({ error: 'ID não informado.' });
-            return;
-        }
-
-
-        if (!req.file) {
-            res.send({ error: 'Imagem não enviada' });
-            return;
-        }
-
-        let data:JsonData = {
-            imagem: this.generateImageFileName(req.file)
-        }
-
-        try {
-            let rs = await this.db.update(id, data, req.file || null);
-
-            if (!rs) {
-                res.send({ error: 'Erro ao atualizar a imagem.' });
-                return;
-            }
-
-            res.send(rs);
-
-        } catch (error) {
-            console.log(error);
-            res.send({ erro: error });
-            return;
-        }
-
-    }
+    
 
     
 }

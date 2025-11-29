@@ -8,7 +8,7 @@ export class Receita extends Entidade implements PossuiCriador{
     nome: string;
     descricao: string;
     modoPreparo: string;
-    instrucoes: Array<string> = [];
+    alimento:string;
     nutrientes: Nutrientes;
     imagem: string;
     tempoPreparo: number; //min
@@ -21,7 +21,7 @@ export class Receita extends Entidade implements PossuiCriador{
     init(data:JsonData):Receita{
         super.init(data);
         this.criador = data.criador_id || null;
-        this.instrucoes = data.instrucoes || [];
+        this.alimento = data.alimento || null;
         this.nome = data.nome;
         this.descricao = data.descricao || null;
         this.modoPreparo = data.modo_preparo || null;
@@ -38,7 +38,7 @@ export class Receita extends Entidade implements PossuiCriador{
         js.nome = this.nome;
         js.descricao = this.descricao;
         js.modo_preparo = this.modoPreparo;
-        js.instrucoes = this.instrucoes;
+        js.alimento = this.alimento;
         js.nutrientes = this.nutrientes;
         js.imagem = this.imagem;
         js.tempo_preparo = this.tempoPreparo;

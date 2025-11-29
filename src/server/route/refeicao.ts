@@ -14,7 +14,7 @@ export class RefeicaoRouter extends Router<RefeicaoController> {
 
         this.get('/usuario/:dia', 'list', this.controller.listUsuario);
 
-        this.post('/imagem/:id', 'upload', this.controller.uploadImagem);
+        this.post('/imagem/:id', 'upload', this.controller.updateImagem);
 
         this.get('/:id', 'get', this.controller.get);
 

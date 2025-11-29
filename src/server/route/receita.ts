@@ -10,7 +10,7 @@ export class ReceitaRouter extends Router<ReceitaController> {
 
         this.get('/', 'list', this.controller.list);
 
-        this.post('/imagem/:id', 'upload', this.controller.uploadImagem);
+        this.post('/imagem/:id', 'upload', this.controller.updateImagem);
 
         return this.router;
             

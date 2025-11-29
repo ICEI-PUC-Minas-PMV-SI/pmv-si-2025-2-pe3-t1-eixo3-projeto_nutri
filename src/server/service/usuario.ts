@@ -2,7 +2,6 @@ import { DB } from "./db";
 import { UsuarioCadastrado } from "../model/usuario";
 import { JsonData } from '../util/interfaces';
 import NodeCache  from 'node-cache';
-import { Multer } from 'multer';
 
 
 export class UsuarioDB extends DB{
@@ -79,8 +78,13 @@ export class UsuarioDB extends DB{
         }
 
         return null;
+    }
 
-
+    async update(id: string, data: JsonData, file?: Express.Multer.File): Promise<any> {
+        if(file){
+            return await this.basicUpdateWithFile('usuario',id,data,file);
+        } 
+        return await this.basicUpdate('usuario', id, data);
     }
 
 

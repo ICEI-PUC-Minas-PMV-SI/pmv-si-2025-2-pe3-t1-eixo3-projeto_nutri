@@ -10,15 +10,15 @@ export class AlimentoRouter extends Router<AlimentoController> {
 
         this.get('/', 'list', this.controller.list);
 
-        this.get('/:id', 'get', this.controller.get);
-
         this.get('/search/:term', 'get', this.controller.search);
+
+        this.get('/:id', 'get', this.controller.get);
 
         this.post('/', 'create', [upload.single('imagem')], this.controller.create);
 
-        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.updateSimples);
 
-        this.post('/imagem/:id', 'upload', this.controller.uploadImagem);
+        this.post('/imagem/:id', 'upload', this.controller.updateImagem);
 
         return this.router;
             

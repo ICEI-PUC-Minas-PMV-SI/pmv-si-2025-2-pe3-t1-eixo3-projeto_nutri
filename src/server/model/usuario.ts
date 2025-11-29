@@ -53,7 +53,7 @@ export class UsuarioCadastrado extends Usuario {
     firebaseUid: string; //not null
     imagem:string; //null
     crn:string; //null
-    objetivos:Objetivos;
+    dados:Objetivos;
 
 
     init(data:JsonData):UsuarioCadastrado{
@@ -66,7 +66,7 @@ export class UsuarioCadastrado extends Usuario {
         this.imagem = data.imagem || null;
         this.username = data.username;
         this.crn = data.crn || null;
-        this.objetivos = data.objetivos || null;
+        this.dados = data.dados || null;
         return this;
     }
 
@@ -80,7 +80,7 @@ export class UsuarioCadastrado extends Usuario {
         js.imagem = this.imagem;
         js.username = this.username;
         js.crn = this.crn;
-        js.objetivos = this.objetivos;
+        js.dados = this.dados;
         return js;
     }
 

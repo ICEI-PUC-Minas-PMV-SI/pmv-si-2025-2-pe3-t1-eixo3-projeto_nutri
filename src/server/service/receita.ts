@@ -25,14 +25,14 @@ export class ReceitaDB extends DB{
         return ar;
     }
 
-    async create(data:JsonData):Promise<Receita> {
+    async create(data: JsonData, file?: Express.Multer.File): Promise<any> {
         
 
 
         return null;
     }
 
-    async update(data:JsonData):Promise<Receita>{
+    async update(id: string, data: JsonData, file?: Express.Multer.File): Promise<any> {
         //atualizar no banco
         //atualizar no redis
         //atualizar VIEW

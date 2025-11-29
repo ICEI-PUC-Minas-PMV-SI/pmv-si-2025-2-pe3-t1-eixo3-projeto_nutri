@@ -11,19 +11,29 @@ export class UsuarioRouter extends Router<UsuarioController> {
     init():express.Router{
         this.router = super.init();
         
-        this.get('/:id', 'get', this.controller.check);
+        this.get('/me', 'me', this.controller.currentUser);
 
-        this.get('/', 'get', this.controller.list);
+        this.get('/', 'list', this.controller.list);
 
-        this.get('/check/:field/:id', 'check', this.controller.check);
+        this.get('/:id', 'get', this.controller.get);
+        
+        this.get('/check/:field/:value', 'check', this.controller.check);
         
         this.post('/register', 'create', [upload.single('imagem')], this.controller.create);
-
-        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
 
         this.post('/login', 'login', this.controller.login);
 
         this.post('/logout', 'logout', this.controller.logout);
+
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
+        
+        this.put('/credenciais/:id', 'credenciais', this.controller.updateDados);
+
+        this.put('/dados/:id', 'dados', this.controller.updateDados);
+
+        this.put('/imagem/:id', 'upload', [upload.single('imagem')], this.controller.updateImagem);
+
+        
 
         return this.router;
 
