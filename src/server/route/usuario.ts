@@ -1,6 +1,7 @@
 import express from "express";
 import { UsuarioController } from "../controller/usuario";
 import { Router } from "./router";
+import upload from '../middleware/upload';
 
 
 export class UsuarioRouter extends Router<UsuarioController> {
@@ -16,13 +17,13 @@ export class UsuarioRouter extends Router<UsuarioController> {
 
         this.get('/check/:field/:id', 'check', this.controller.check);
         
-        this.post('/register', 'create', this.controller.create);
+        this.post('/register', 'create', [upload.single('imagem')], this.controller.create);
+
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
 
         this.post('/login', 'login', this.controller.login);
 
         this.post('/logout', 'logout', this.controller.logout);
-
-        this.post('/upload', 'upload', this.controller.upload);
 
         return this.router;
 

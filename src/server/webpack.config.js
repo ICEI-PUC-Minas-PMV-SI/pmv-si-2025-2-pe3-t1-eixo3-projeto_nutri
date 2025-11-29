@@ -38,7 +38,12 @@ module.exports = {
             patterns:[
                 {
                     from: path.resolve(__dirname, '../client/dist'),
-                    to: path.resolve(__dirname,'./dist/public')
+                    to: 'public', // => dist/public
+                },
+                {
+                    from: path.resolve(__dirname, 'uploads'),
+                    to: 'uploads', // => dist/uploads
+                    noErrorOnMissing: true,
                 }
             ]
         }),

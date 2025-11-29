@@ -41,7 +41,6 @@ export class UsuarioController extends Controller{
     }
 
     async login(req: any, res: any, next: any): Promise<any> {
-        console.log('login');
         if(!req.user || req.user.tipo!='logado'){
             res.send({success:false,error:'Erro no login'});
             return;
@@ -74,6 +73,10 @@ export class UsuarioController extends Controller{
         return false;
     }
 
+    async update(req: any, res: any, next: any): Promise<any> {
+
+    }
+
     async create(req: any, res: any, next: any): Promise<any> {
         const app:admin.app.App = admin.app();
 
@@ -82,7 +85,7 @@ export class UsuarioController extends Controller{
             senha: req.body.password
         }
 
-        const userData = {
+        let userData = {
             email:req.body.email, 
             nome: req.body.nome,
             sobrenome: req.body.sobrenome || null,
@@ -90,11 +93,18 @@ export class UsuarioController extends Controller{
             username: req.body.username,
             firebase_uid: null,
             crn: req.body.crn || null,
-            roles: ['usuario']
+            roles: ['usuario'],
+            imagem:null
         };
+
+        
 
         if(userData.crn){
             userData.roles.push('nutri')
+        }
+
+        if(req.file){
+            userData.imagem = this.generateImageFileName(req.file);
         }
 
         if(await this.db.checkUser(userData)){
@@ -111,7 +121,7 @@ export class UsuarioController extends Controller{
 
             userData.firebase_uid = userRecord.uid;
 
-            let rs = await this.db.create(userData);
+            let rs = await this.db.create(userData, req.file || null);
 
             if(!rs){
                 res.send({error:"Erro no registro do usuário"});
@@ -125,7 +135,7 @@ export class UsuarioController extends Controller{
             return;
         }
 
-        res.send(req.params);
+        //res.send(req.params);
 
     }
 

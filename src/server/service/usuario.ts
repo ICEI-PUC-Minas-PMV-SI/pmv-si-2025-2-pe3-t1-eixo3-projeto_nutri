@@ -2,6 +2,7 @@ import { DB } from "./db";
 import { UsuarioCadastrado } from "../model/usuario";
 import { JsonData } from '../util/interfaces';
 import NodeCache  from 'node-cache';
+import { Multer } from 'multer';
 
 
 export class UsuarioDB extends DB{
@@ -19,7 +20,6 @@ export class UsuarioDB extends DB{
     static async getFromCache(uid:string):Promise<UsuarioCadastrado>{
         const cache:NodeCache = new NodeCache();
         const cached: any = cache.get('usuario:'+uid);
-        console.log(cached);
         if (cached) {
             return (new UsuarioCadastrado()).init(JSON.parse(cached));
         }
@@ -48,23 +48,24 @@ export class UsuarioDB extends DB{
 
     async checkUser(userData:JsonData):Promise<boolean>{
 
-        let res = await(this.query("SELECT *FROM usuario WHERE firebase_uid='"+userData.firebase_uid+"' OR email='"+userData.email+"' OR username='"+userData.username+"'"));
+        let res = await(this.query("SELECT * FROM usuario WHERE firebase_uid='"+userData.firebase_uid+"' OR email='"+userData.email+"' OR username='"+userData.username+"'"));
         if(res.rows.length>0){   
             return true;
         }
         return false;
     }
 
-    async create(userData:JsonData):Promise<any>{
-        if(await this.checkUser(userData)){
-            return {error:'Usuário já exsite'};
-        }
+    async create(userData: JsonData, file?:Express.Multer.File):Promise<any>{
 
         const colunas = Object.keys(userData);
 
         const placeholders = colunas.map((_, i) => `$${i + 1}`);
 
         const vals = Object.values(userData);
+
+        if(file){
+            
+        }
 
         const query = 'INSERT INTO usuario ('+colunas.join(', ')+') VALUES ('+placeholders.join(', ')+') RETURNING *;';
 

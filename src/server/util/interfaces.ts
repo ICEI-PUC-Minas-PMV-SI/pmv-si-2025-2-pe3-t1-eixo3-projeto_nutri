@@ -51,7 +51,8 @@ export enum TipoRefeicao {
   CAFEMANHA = 'cafedamanha',
   ALMOCO = 'almoco',
   CAFETARDE = 'cafetarde',
-  JANTA = 'janta'
+  JANTA = 'janta',
+  AGUA = 'agua'
 }
 
 export enum EstadoAlimento {

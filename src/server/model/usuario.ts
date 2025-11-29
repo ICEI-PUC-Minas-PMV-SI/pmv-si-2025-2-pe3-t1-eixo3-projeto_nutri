@@ -31,6 +31,18 @@ export class UsuarioGuest extends Usuario {
 
 }
 
+
+export interface Objetivos {
+    peso:number;
+    altura:number;
+    genero:string;
+    idade:number;
+    pesoIdeal:number;
+    calorias:number;
+    consumoAgua:number;
+}
+
+
 export class UsuarioCadastrado extends Usuario {
 
     nome: string; //not null
@@ -41,6 +53,7 @@ export class UsuarioCadastrado extends Usuario {
     firebaseUid: string; //not null
     imagem:string; //null
     crn:string; //null
+    objetivos:Objetivos;
 
 
     init(data:JsonData):UsuarioCadastrado{
@@ -51,9 +64,9 @@ export class UsuarioCadastrado extends Usuario {
         this.email = data.email;
         this.firebaseUid = data.firebase_uid;
         this.imagem = data.imagem || null;
-        //this.roles = data.roles;
         this.username = data.username;
         this.crn = data.crn || null;
+        this.objetivos = data.objetivos || null;
         return this;
     }
 
@@ -67,6 +80,7 @@ export class UsuarioCadastrado extends Usuario {
         js.imagem = this.imagem;
         js.username = this.username;
         js.crn = this.crn;
+        js.objetivos = this.objetivos;
         return js;
     }
 

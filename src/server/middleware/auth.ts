@@ -1,12 +1,12 @@
 import admin from 'firebase-admin';
-import serviceAccount from "../config/fb.json";
+import {config} from "../config/fb";
 
 export class Auth {
 
 
     constructor(){
         admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount as admin.ServiceAccount)
+            credential: admin.credential.cert(config as admin.ServiceAccount)
         });
     }
 

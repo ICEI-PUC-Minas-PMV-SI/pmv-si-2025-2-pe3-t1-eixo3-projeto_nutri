@@ -9,8 +9,28 @@ export class RefeicaoRouter extends Router<RefeicaoController> {
         this.router = super.init();
 
         this.get('/', 'list', this.controller.list);
+        
+        this.get('/usuario/', 'list', this.controller.listUsuario);
 
-        this.post('/upload', 'upload', this.controller.upload);
+        this.get('/usuario/:dia', 'list', this.controller.listUsuario);
+
+        this.post('/imagem/:id', 'upload', this.controller.uploadImagem);
+
+        this.get('/:id', 'get', this.controller.get);
+
+        this.post('/', 'create', this.controller.create);
+
+        this.put('/:id', 'update', this.controller.update);
+
+        this.delete('/:id', 'delete', this.controller.delete);
+
+        this.get('/agua/:id/:dia', 'get', this.controller.getAgua);
+        
+        this.post('/agua', 'create', this.controller.createAgua);
+
+        this.put('/agua/:id', 'update', this.controller.updateAgua);
+
+        this.delete('/agua/:id', 'delete', this.controller.deleteAgua);
 
         return this.router;
             

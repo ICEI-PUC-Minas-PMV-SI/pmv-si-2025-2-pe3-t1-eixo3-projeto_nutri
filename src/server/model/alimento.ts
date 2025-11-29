@@ -9,6 +9,7 @@ export class Alimento extends Entidade implements PossuiCriador{
     nome:string;
     descricao:string;
     criador:string = null;
+    receita:string = null;
     categoria:string;
     subcategoria:string;
     imagem:string;
@@ -20,15 +21,16 @@ export class Alimento extends Entidade implements PossuiCriador{
 
     init(data:JsonData):Alimento{
         super.init(data);
-        this.nome = data.nome;
-        this.descricao = data.descricao || null;
-        this.criador = data.criador_id || null;
-        this.categoria = data.categoria || null;
-        this.subcategoria = data.subcategoria || null;
-        this.imagem = data.imagem || null;
-        this.nutrientes = data.nutrientes || null;
-        this.estado = data.estado || null;
-        this.modificadores = data.modificadores || [];
+        this.nome = data.data.nome;
+        this.descricao = data.data.descricao || null;
+        this.criador = data.data.criador_id || null;
+        this.categoria = data.data.categoria || null;
+        this.subcategoria = data.data.subcategoria || null;
+        this.imagem = data.data.imagem || null;
+        this.nutrientes = data.data.nutrientes || null;
+        this.estado = data.data.estado || null;
+        this.receita = data.data.receita || null;
+        this.tags = data.data.tags || [];
         return this;
     }
 
@@ -42,7 +44,7 @@ export class Alimento extends Entidade implements PossuiCriador{
         js.imagem = this.imagem;
         js.nutrientes = this.nutrientes;
         js.estado = this.estado;
-        js.modificadores = this.modificadores;
+        js.receita = this.receita;
         let tg = [];
         for(let t of this.tags){
             tg.push(t.id);
@@ -53,18 +55,6 @@ export class Alimento extends Entidade implements PossuiCriador{
 
 
 }
-
-
-export class AlimentoPreparado extends Alimento {
-
-    receita:Receita;
-
-
-}
-
-
-
-
 
 
 

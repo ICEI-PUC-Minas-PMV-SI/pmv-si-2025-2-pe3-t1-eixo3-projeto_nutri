@@ -1,7 +1,7 @@
 import express from "express";
 import { Router } from "./router";
 import { AlimentoController } from "../controller/alimento";
-
+import upload from '../middleware/upload';
 
 export class AlimentoRouter extends Router<AlimentoController> {
 
@@ -10,7 +10,15 @@ export class AlimentoRouter extends Router<AlimentoController> {
 
         this.get('/', 'list', this.controller.list);
 
-        this.post('/upload', 'upload', this.controller.upload);
+        this.get('/:id', 'get', this.controller.get);
+
+        this.get('/search/:term', 'get', this.controller.search);
+
+        this.post('/', 'create', [upload.single('imagem')], this.controller.create);
+
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
+
+        this.post('/imagem/:id', 'upload', this.controller.uploadImagem);
 
         return this.router;
             
