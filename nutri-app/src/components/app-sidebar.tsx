@@ -45,11 +45,11 @@ const data = {
       url: "/dashboard",
       icon: LayoutDashboard,
     },
-    {
-      title: "Plano Alimentar",
-      url: "/meal-plan",
-      icon: CalendarCogIcon,
-    },
+    // {
+    //   title: "Plano Alimentar",
+    //   url: "/meal-plan",
+    //   icon: CalendarCogIcon,
+    // },
   ],
   social: [
     {
