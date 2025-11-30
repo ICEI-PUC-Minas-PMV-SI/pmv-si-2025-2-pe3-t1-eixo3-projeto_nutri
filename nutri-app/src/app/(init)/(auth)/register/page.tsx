@@ -1,13 +1,9 @@
 'use client'
 
 import AuthFormCard from "@/components/form/AuthFormCard";
-import Button from "@/components/form/button";
-import Input from "@/components/form/input";
 import RegisterAdditionalInfoForm from "@/components/form/RegisterAdditionalInfoForm";
 import RegisterBasicInfoForm from "@/components/form/RegisterBasicInfoForm";
-import Select from "@/components/form/select";
 import { useState } from "react";
-
 
 export default function Register()  {
 
