@@ -10,22 +10,27 @@ export class ReceitaDB extends DB{
 
         const res = await this.pool.query("SELECT * FROM receita_completa_view WHERE id = '"+id+"';");
         if(res.rows.length>0){
-            return (new Receita()).init(res.rows[0]);
+            return (new Receita()).init(res.rows[0].data);
         }
         return null;
     }
 
 
-    async list():Promise<Array<Receita>> {
-        const res = await this.pool.query("SELECT * FROM receita_completa_view;");
+    async list(criador?:string):Promise<Array<Receita>> {
+        let query:string = "SELECT * FROM receita_completa_view;";
+        if(criador){
+            `SELECT * FROM receita_completa_view WHERE data->>'criador' = ${criador};`
+        }
+        const res = await this.pool.query(query);
         let ar:Array<Receita> = [];
         for(let r of res.rows){
-            ar.push((new Receita()).init(r));
+            ar.push((new Receita()).init(r.data));
         }
         return ar;
     }
 
     async create(data: JsonData, file?: Express.Multer.File): Promise<any> {
+        
         
 
 

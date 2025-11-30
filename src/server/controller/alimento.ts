@@ -100,6 +100,66 @@ export class AlimentoController extends Controller {
         return await this.update(req,res,next);
     }
 
+    async addReceitaRequest(req, res, next):Promise<any> {
+        const id: string = req.params.id;      // ID vindo da rota
+        let data: JsonData = req.body;
+        if (!id) {
+            res.send({ error: 'ID não informado.' });
+            return;
+        }
+
+        if (!data) {
+            res.send({ error: 'Dados inválidos.' });
+            return;
+        }
+        let rs = await this.addReceita(id,data);
+        
+        if (!rs) {
+            res.send({ error: 'Erro ao atualizar o alimento.' });
+            return;
+        }
+
+        res.send({ success: true });
+    }
+
+    async addReceita(id:string, data:JsonData): Promise<any> {
+        
+        let alimento:Alimento = await this.db.find(id);
+        alimento.receitas.push(data.receita);
+        let alimentoData:JsonData = {
+            id:alimento.id,
+            receitas: alimento.receitas
+        }
+
+        try {
+            return await this.db.update(id, alimentoData);
+
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
+
+    }
+
+    async removeReceita(alimento:Alimento,idReceita:string ): Promise<any> {
+
+        alimento.receitas.splice(alimento.receitas.indexOf(idReceita),1);
+        let alimentoData: JsonData = {
+            id: alimento.id,
+            receitas: alimento.receitas
+        }
+
+        try {
+            return await this.db.update(alimento.id, alimentoData);
+
+        } catch (error) {
+            console.log(error);
+            return null;
+        }
+
+    }
+
+
     async update(req, res, next): Promise<any> {
         const id: string = req.params.id;      // ID vindo da rota
         let data: JsonData = req.body;
@@ -114,14 +174,16 @@ export class AlimentoController extends Controller {
             return;
         }
 
+        let alimento:Alimento = await this.db.find(id);
+
         // Monta o objeto exatamente como em create()
         let alimentoData:JsonData = {
-            nome: data.nome,
-            descricao: data.descricao || null,
-            categoria: data.categoria || null,
-            subcategoria: data.subcategoria || null,
-            nutrientes: data.nutrientes || null,
-            estado: data.estado || null
+            nome: data.nome || alimento.nome,
+            descricao: data.descricao || alimento.descricao,
+            categoria: data.categoria || alimento.categoria,
+            subcategoria: data.subcategoria || alimento.subcategoria,
+            nutrientes: data.nutrientes || alimento.nutrientes,
+            estado: data.estado || alimento.estado
         };
 
         // Se uma nova imagem foi enviada, gera novo nome

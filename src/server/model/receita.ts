@@ -13,14 +13,13 @@ export class Receita extends Entidade implements PossuiCriador{
     imagem: string;
     tempoPreparo: number; //min
     criador:string;
-    ingredientesEntrada:Array<Ingrediente> = [];
-    ingredientesFinais:Array<Ingrediente> = [];
+    ingredientesEntrada:Array<string> = [];
     tags:Array<Tag> = [];
     
 
     init(data:JsonData):Receita{
         super.init(data);
-        this.criador = data.criador_id || null;
+        this.criador = data.criador || null;
         this.alimento = data.alimento || null;
         this.nome = data.nome;
         this.descricao = data.descricao || null;
@@ -29,7 +28,7 @@ export class Receita extends Entidade implements PossuiCriador{
         this.imagem = data.imagem || null;
         this.tempoPreparo = data.tempo_preparo || null;
         this.ingredientesEntrada = data.ingredientes_entrada || [];
-        this.ingredientesFinais = data.ingredientes_finais || [];
+        //this.ingredientesFinais = data.ingredientes_finais || [];
         return this;
     }
 
@@ -42,9 +41,9 @@ export class Receita extends Entidade implements PossuiCriador{
         js.nutrientes = this.nutrientes;
         js.imagem = this.imagem;
         js.tempo_preparo = this.tempoPreparo;
-        js.criador_id = this.criador;
+        js.criador = this.criador;
         js.ingredientes_entrada = this.ingredientesEntrada;
-        js.ingredientes_finais = this.ingredientesFinais;
+        //js.ingredientes_finais = this.ingredientesFinais;
         return js;
 
     }

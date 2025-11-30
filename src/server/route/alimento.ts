@@ -16,7 +16,10 @@ export class AlimentoRouter extends Router<AlimentoController> {
 
         this.post('/', 'create', [upload.single('imagem')], this.controller.create);
 
-        this.put('/:id', 'update', [upload.single('imagem')], this.controller.updateSimples);
+        this.put('/receita/:id/:id_receita', 'add_receita', this.controller.addReceita);
+        
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
+
 
         this.post('/imagem/:id', 'upload', this.controller.updateImagem);
 

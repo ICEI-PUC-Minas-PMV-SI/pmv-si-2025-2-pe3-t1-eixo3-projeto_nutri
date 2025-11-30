@@ -9,13 +9,12 @@ export class Alimento extends Entidade implements PossuiCriador{
     nome:string;
     descricao:string;
     criador:string = null;
-    receita:string = null;
+    receitas:Array<string> = [];
     categoria:string;
     subcategoria:string;
     imagem:string;
     nutrientes:Nutrientes;
     estado:EstadoAlimento;
-    modificadores:Array<string> = [];
     tags:Array<Tag> = [];
     
 
@@ -29,7 +28,7 @@ export class Alimento extends Entidade implements PossuiCriador{
         this.imagem = data.data.imagem || null;
         this.nutrientes = data.data.nutrientes || null;
         this.estado = data.data.estado || null;
-        this.receita = data.data.receita || null;
+        this.receitas = data.data.receitas || [];
         this.tags = data.data.tags || [];
         return this;
     }
@@ -44,7 +43,7 @@ export class Alimento extends Entidade implements PossuiCriador{
         js.imagem = this.imagem;
         js.nutrientes = this.nutrientes;
         js.estado = this.estado;
-        js.receita = this.receita;
+        js.receitas = this.receitas;
         let tg = [];
         for(let t of this.tags){
             tg.push(t.id);

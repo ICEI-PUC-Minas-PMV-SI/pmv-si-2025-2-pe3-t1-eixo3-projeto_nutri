@@ -24,8 +24,6 @@ export class UsuarioRouter extends Router<UsuarioController> {
         this.post('/login', 'login', this.controller.login);
 
         this.post('/logout', 'logout', this.controller.logout);
-
-        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
         
         this.put('/credenciais/:id', 'credenciais', this.controller.updateDados);
 
@@ -33,6 +31,7 @@ export class UsuarioRouter extends Router<UsuarioController> {
 
         this.put('/imagem/:id', 'upload', [upload.single('imagem')], this.controller.updateImagem);
 
+        this.put('/:id', 'update', [upload.single('imagem')], this.controller.update);
         
 
         return this.router;
