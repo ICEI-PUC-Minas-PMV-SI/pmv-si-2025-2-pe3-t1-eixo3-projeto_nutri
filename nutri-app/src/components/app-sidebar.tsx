@@ -3,10 +3,12 @@
 import * as React from "react";
 import {
   CalendarCogIcon,
+  CarrotIcon,
   GalleryVerticalEnd,
   LayoutDashboard,
   LogOut,
   MessageCircleMoreIcon,
+  Slack,
   UserCog2,
 } from "lucide-react";
 
@@ -43,6 +45,11 @@ const data = {
       url: "/dashboard",
       icon: LayoutDashboard,
     },
+    {
+      title: "Plano Alimentar",
+      url: "/meal-plan",
+      icon: CalendarCogIcon,
+    },
   ],
   social: [
     {
@@ -55,11 +62,6 @@ const data = {
       url: "/posts",
       icon: MessageCircleMoreIcon,
     },
-    {
-      title: "Plano Alimentar",
-      url: "/meal-plan",
-      icon: CalendarCogIcon,
-    },
   ],
 };
 
@@ -67,7 +69,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <SidebarMenuItem>
+          <SidebarMenuButton>
+            <span className="text-xl font-semibold w-min">Nutri</span>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
       </SidebarHeader>
       <Separator />
       <SidebarContent>
