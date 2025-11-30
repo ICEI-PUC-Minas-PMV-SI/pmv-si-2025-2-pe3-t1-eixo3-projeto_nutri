@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -12,11 +12,18 @@ import {
   SortingState,
   useReactTable,
   VisibilityState,
-} from "@tanstack/react-table"
-import { ArrowUpDown, ChevronDown, MoreHorizontal } from "lucide-react"
+} from "@tanstack/react-table";
+import {
+  ArrowUpDown,
+  ChevronDown,
+  Edit,
+  MoreHorizontal,
+  Plus,
+  Trash,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -25,8 +32,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
+} from "@/components/ui/dropdown-menu";
 import {
   Table,
   TableBody,
@@ -34,49 +40,69 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
+import { MealCell } from "./meal-cell";
 
-const data: Payment[] = [
+const data: Alimentation[] = [
   {
-    id: "m5gr84i9",
-    amount: 316,
-    status: "success",
-    email: "ken99@example.com",
+    id: 1,
+    calories: 450,
+    carb: 34,
+    fat: 10,
+    protein: 4,
+    quantity: 240,
+    unit: "g",
+    meal: "others",
+    name: "Ovo com pão",
   },
   {
-    id: "3u1reuv4",
-    amount: 242,
-    status: "success",
-    email: "Abe45@example.com",
+    id: 1,
+    calories: 450,
+    carb: 34,
+    fat: 10,
+    protein: 4,
+    quantity: 240,
+    unit: "g",
+    meal: "lunch",
+    name: "Ovo com pão",
   },
   {
-    id: "derv1ws0",
-    amount: 837,
-    status: "processing",
-    email: "Monserrat44@example.com",
+    id: 1,
+    calories: 450,
+    carb: 34,
+    fat: 10,
+    protein: 4,
+    quantity: 240,
+    unit: "g",
+    meal: "breakfast",
+    name: "Ovo com pão",
   },
   {
-    id: "5kma53ae",
-    amount: 874,
-    status: "success",
-    email: "Silas22@example.com",
+    id: 1,
+    calories: 450,
+    carb: 34,
+    fat: 10,
+    protein: 4,
+    quantity: 240,
+    unit: "g",
+    meal: "dinner",
+    name: "Ovo com pão",
   },
-  {
-    id: "bhqecj4p",
-    amount: 721,
-    status: "failed",
-    email: "carmella@example.com",
-  },
-]
+];
 
-export type Payment = {
-  id: string
-  amount: number
-  status: "pending" | "processing" | "success" | "failed"
-  email: string
-}
+export type Alimentation = {
+  id: number;
+  calories: number;
+  name: string;
+  carb: number;
+  fat: number;
+  protein: number;
+  quantity: number;
+  unit: "g" | "ml";
+  meal: "breakfast" | "lunch" | "dinner" | "others";
+};
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Alimentation>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -100,81 +126,66 @@ export const columns: ColumnDef<Payment>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "status",
-    header: "Status",
-    cell: ({ row }) => (
-      <div className="capitalize">{row.getValue("status")}</div>
-    ),
+    accessorKey: "meal",
+    header: "Refeição",
+    cell: ({ row }) => <MealCell meal={row.getValue("meal")} />,
   },
   {
-    accessorKey: "email",
+    accessorKey: "name",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Email
+          Nome
           <ArrowUpDown />
         </Button>
-      )
+      );
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("email")}</div>,
+    cell: ({ row }) => <div className="lowercase">{row.getValue("name")}</div>,
   },
   {
-    accessorKey: "amount",
-    header: () => <div className="text-right">Amount</div>,
-    cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("amount"))
-
-      // Format the amount as a dollar amount
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(amount)
-
-      return <div className="text-right font-medium">{formatted}</div>
-    },
+    accessorKey: "calories",
+    header: () => <div>Calorias</div>,
+    cell: ({ row }) => (
+      <div className="lowercase">{row.getValue("calories")}</div>
+    ),
+  },
+  {
+    accessorKey: "carb",
+    header: () => <div>Carboidratos</div>,
+    cell: ({ row }) => <div className="lowercase">{row.getValue("carb")}</div>,
+  },
+  {
+    accessorKey: "fat",
+    header: () => <div>Gorduras</div>,
+    cell: ({ row }) => <div className="lowercase">{row.getValue("fat")}</div>,
+  },
+  {
+    accessorKey: "protein",
+    header: () => <div>Proteínas</div>,
+    cell: ({ row }) => (
+      <div className="lowercase">{row.getValue("protein")}</div>
+    ),
   },
   {
     id: "actions",
     enableHiding: false,
     cell: ({ row }) => {
-      const payment = row.original
-
-      return (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(payment.id)}
-            >
-              Copy payment ID
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>View customer</DropdownMenuItem>
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      )
+      return <Edit size={16} />;
     },
   },
-]
+];
 
 export function DataTableDemo() {
-  const [sorting, setSorting] = React.useState<SortingState>([])
+  const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
-  )
+  );
   const [columnVisibility, setColumnVisibility] =
-    React.useState<VisibilityState>({})
-  const [rowSelection, setRowSelection] = React.useState({})
+    React.useState<VisibilityState>({});
+  const [rowSelection, setRowSelection] = React.useState({});
 
   const table = useReactTable({
     data,
@@ -193,49 +204,35 @@ export function DataTableDemo() {
       columnVisibility,
       rowSelection,
     },
-  })
+  });
 
   return (
     <div className="w-full">
-      <div className="flex items-center py-4">
-        <Input
-          placeholder="Filter emails..."
-          value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
-          onChange={(event) =>
-            table.getColumn("email")?.setFilterValue(event.target.value)
-          }
-          className="max-w-sm"
-        />
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto">
-              Columns <ChevronDown />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            {table
-              .getAllColumns()
-              .filter((column) => column.getCanHide())
-              .map((column) => {
-                return (
-                  <DropdownMenuCheckboxItem
-                    key={column.id}
-                    className="capitalize"
-                    checked={column.getIsVisible()}
-                    onCheckedChange={(value) =>
-                      column.toggleVisibility(!!value)
-                    }
-                  >
-                    {column.id}
-                  </DropdownMenuCheckboxItem>
-                )
-              })}
-          </DropdownMenuContent>
-        </DropdownMenu>
+      <div className="flex justify-between items-center px-6 py-5 border rounded-t-lg">
+        <div className="flex flex-col gap-1">
+          <div className="flex gap-2">
+            <p className="text-lg font-medium">Diário alimentar</p>
+            <span className="text-xs self-center p-1 font-medium rounded-lg bg-zinc-100 text-green-600">
+              13/11/2025
+            </span>
+          </div>
+          <p className="text-sm">
+            Registre aqui todas as suas refeições do dia
+          </p>
+        </div>
+        <div className="flex gap-4">
+          <Button variant={"destructive"}>
+            <Trash /> Deletar Selecionados
+          </Button>
+          <Button>
+            <Plus />
+            Registrar Refeição
+          </Button>
+        </div>
       </div>
-      <div className="overflow-hidden rounded-md border">
+      <div className="overflow-hidden border">
         <Table>
-          <TableHeader>
+          <TableHeader className="bg-[#E8EEF3] text-[#607D8B]">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
@@ -248,7 +245,7 @@ export function DataTableDemo() {
                             header.getContext()
                           )}
                     </TableHead>
-                  )
+                  );
                 })}
               </TableRow>
             ))}
@@ -276,7 +273,7 @@ export function DataTableDemo() {
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  No results.
+                  Sem registros.
                 </TableCell>
               </TableRow>
             )}
@@ -285,8 +282,8 @@ export function DataTableDemo() {
       </div>
       <div className="flex items-center justify-end space-x-2 py-4">
         <div className="text-muted-foreground flex-1 text-sm">
-          {table.getFilteredSelectedRowModel().rows.length} of{" "}
-          {table.getFilteredRowModel().rows.length} row(s) selected.
+          {table.getFilteredSelectedRowModel().rows.length} de{" "}
+          {table.getFilteredRowModel().rows.length} linha(s) selecionadas.
         </div>
         <div className="space-x-2">
           <Button
@@ -295,7 +292,7 @@ export function DataTableDemo() {
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
           >
-            Previous
+            Anterior
           </Button>
           <Button
             variant="outline"
@@ -303,10 +300,10 @@ export function DataTableDemo() {
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
           >
-            Next
+            Próxima
           </Button>
         </div>
       </div>
     </div>
-  )
+  );
 }
