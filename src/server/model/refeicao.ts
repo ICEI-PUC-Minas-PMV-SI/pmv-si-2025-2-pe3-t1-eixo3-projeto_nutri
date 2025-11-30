@@ -6,15 +6,14 @@ import { Tag } from "./tag";
 export class Refeicao extends Entidade implements PossuiCriador{
 
     
-    nome: string;
-    descricao: string;
-    criador:string;
-    tipo:TipoRefeicao;
-    dataHora:Date;
-    receitas:Array<Receita>; 
-    ingredientes:Array<Ingrediente>;
-    nutrientes:Nutrientes;
-    imagem:string;
+    nome: string; //null
+    descricao: string; //null
+    criador:string; //not null
+    tipo:TipoRefeicao; //string not null
+    dataHora:Date; //not null
+    ingredientes:Array<Ingrediente>; //[]
+    nutrientes:Nutrientes; //null
+    imagem:string; //null
     tags:Array<Tag> = [];
     
 
@@ -25,7 +24,6 @@ export class Refeicao extends Entidade implements PossuiCriador{
         this.criador = data.criador_id;
         this.tipo = data.tipo;
         this.dataHora = data.data_hora;
-        this.receitas = data.receitas || [];
         this.ingredientes = data.ingredientes || [];
         this.nutrientes = data.nutrientes || {};
         this.imagem = data.imagem || null;

@@ -44,7 +44,8 @@ export enum Medida {
   kcal = 'kcal',
   kJ = 'kJ',
   pct = 'pct',
-  variavel = 'variavel'
+  variavel = 'variavel',
+  porcao = 'porcao'
 }
 
 export enum TipoRefeicao {
@@ -83,11 +84,92 @@ export interface Nutrientes {
     
 }
 
-export interface Ingrediente {
-  alimento_id:string;
-  quantidade:number;
-  medida:Medida;
-  criador_id:string;
+export const medidaNutriente:JsonData = {
+  energia: Medida.kcal,
+  proteina: Medida.g,
+  carboidrato: Medida.g,
+  fibras: Medida.g,
+  colesterol: Medida.mg,
+  acucares: Medida.g,
+  indiceGlicemico: Medida.variavel,
+  gordurasTotais: Medida.variavel,
+  gordurasSaturadas: Medida.variavel,
 }
+
+export interface Ingrediente {
+  alimento_id: string;
+  quantidade: number;
+  medida: Medida;
+}
+
+export function conversaoMedida(quantidade:number, medidaEntrada:Medida, medidaSaida:Medida):number{
+  // 🔹 Caso especial: PORÇÃO (é sempre multiplicador puro)
+  if (medidaEntrada === Medida.porcao) {
+    return quantidade;
+  }
+
+  // -----------------------------
+  // 🔹 MASSA
+  // -----------------------------
+  const massaParaGramas: Record<Medida, number> = {
+    [Medida.kg]: 1000,
+    [Medida.g]: 1,
+    [Medida.mg]: 1 / 1000,
+    [Medida.ug]: 1 / 1_000_000,
+
+    // inválidos para massa
+    [Medida.l]: NaN,
+    [Medida.ml]: NaN,
+    [Medida.kcal]: NaN,
+    [Medida.kJ]: NaN,
+    [Medida.pct]: NaN,
+    [Medida.variavel]: NaN,
+    [Medida.porcao]: NaN,
+  };
+
+  // -----------------------------
+  // 🔹 VOLUME
+  // -----------------------------
+  const volumeParaMl: Record<Medida, number> = {
+    [Medida.l]: 1000,
+    [Medida.ml]: 1,
+
+    // inválidos para volume
+    [Medida.kg]: NaN,
+    [Medida.g]: NaN,
+    [Medida.mg]: NaN,
+    [Medida.ug]: NaN,
+    [Medida.kcal]: NaN,
+    [Medida.kJ]: NaN,
+    [Medida.pct]: NaN,
+    [Medida.variavel]: NaN,
+    [Medida.porcao]: NaN,
+  };
+
+  // -----------------------------
+  // 🔹 MASSA para MASSA
+  // -----------------------------
+  if (!isNaN(massaParaGramas[medidaEntrada]) && !isNaN(massaParaGramas[medidaSaida])) {
+    const qEmGramas = quantidade * massaParaGramas[medidaEntrada];
+    return qEmGramas / massaParaGramas[medidaSaida];
+  }
+
+  // -----------------------------
+  // 🔹 VOLUME para VOLUME
+  // -----------------------------
+  if (!isNaN(volumeParaMl[medidaEntrada]) && !isNaN(volumeParaMl[medidaSaida])) {
+    const qEmMl = quantidade * volumeParaMl[medidaEntrada];
+    return qEmMl / volumeParaMl[medidaSaida];
+  }
+
+  // -----------------------------
+  // 🔹 UNIDADES NÃO CONVERSÍVEIS
+  // kcal, %, variavel, etc.
+  // -----------------------------
+  return 1;
+}
+
+
+
 
   

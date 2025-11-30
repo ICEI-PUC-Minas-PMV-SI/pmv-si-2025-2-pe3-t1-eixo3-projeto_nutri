@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Alimento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        legend {
+            padding: 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .field {
+            flex: 1 1 200px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.75rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            padding: 0.4rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 0.95rem;
+        }
+
+        textarea {
+            min-height: 70px;
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            font-size: 0.9rem;
+        }
+
+        .actions {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: none;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        button[type="button"] {
+            background: #e5e7eb;
+        }
+
+        .status {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .status.error {
+            color: #b91c1c;
+        }
+
+        .status.success {
+            color: #15803d;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="pageTitle">Novo Alimento</h1>
+
+    <form id="alimentoForm" enctype="multipart/form-data">
+        <!-- hidden ID: se preenchido, será update -->
+        <input type="hidden" name="id" id="id" />
+
+        <fieldset>
+            <legend>Dados básicos</legend>
+            <div class="row">
+                <div class="field">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required />
+                </div>
+                <div class="field">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" id="categoria" name="categoria" placeholder="Ex: Cereais, Carnes, Frutas..." />
+                </div>
+                <div class="field">
+                    <label for="subcategoria">Subcategoria</label>
+                    <input type="text" id="subcategoria" name="subcategoria" placeholder="Ex: Arroz, Pães, Aves..." />
+                </div>
+            </div>
+            <div class="field">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao"></textarea>
+            </div>
+            <div class="field">
+                <label for="estado">Estado do alimento</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecione...</option>
+                    <option value="cru">Cru</option>
+                    <option value="cozido">Cozido</option>
+                    <option value="assado">Assado</option>
+                    <option value="frito">Frito</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="receita">ID de receita associada (opcional)</label>
+                <input type="text" id="receita" name="receita" placeholder="UUID da receita" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nutrientes (por 100g / porção base)</legend>
+            <div class="row">
+                <div class="field">
+                    <label for="energia">Energia (kcal)</label>
+                    <input type="number" step="0.01" id="energia" name="energia" />
+                </div>
+                <div class="field">
+                    <label for="proteina">Proteína (g)</label>
+                    <input type="number" step="0.01" id="proteina" name="proteina" />
+                </div>
+                <div class="field">
+                    <label for="carboidrato">Carboidrato (g)</label>
+                    <input type="number" step="0.01" id="carboidrato" name="carboidrato" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="fibras">Fibras (g)</label>
+                    <input type="number" step="0.01" id="fibras" name="fibras" />
+                </div>
+                <div class="field">
+                    <label for="colesterol">Colesterol (mg)</label>
+                    <input type="number" step="0.01" id="colesterol" name="colesterol" />
+                </div>
+                <div class="field">
+                    <label for="gordurasTotais">Gorduras totais (g)</label>
+                    <input type="number" step="0.01" id="gordurasTotais" name="gordurasTotais" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="gordurasSaturadas">Gorduras saturadas (g)</label>
+                    <input type="number" step="0.01" id="gordurasSaturadas" name="gordurasSaturadas" />
+                </div>
+                <div class="field">
+                    <label for="acucares">Açúcares (g)</label>
+                    <input type="number" step="0.01" id="acucares" name="acucares" />
+                </div>
+                <div class="field">
+                    <label for="indiceGlicemico">Índice glicêmico (escala)</label>
+                    <input type="number" step="0.01" id="indiceGlicemico" name="indiceGlicemico" />
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Imagem</legend>
+            <div class="field">
+                <label for="imagem">Upload de imagem (opcional)</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" />
+            </div>
+            <div class="field" id="imagemAtualWrapper" style="display:none;">
+                <label>Imagem atual:</label>
+                <img id="imagemAtual" src="" alt="Imagem atual do alimento"
+                    style="max-width:200px; display:block; border:1px solid #ccc; border-radius:4px;" />
+            </div>
+        </fieldset>
+
+        <div class="actions">
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="window.history.back()">Cancelar</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </form>
+
+    <script type="module">
+        import { apiRequest } from "./js/call.js";
+
+        const API_BASE = '/api/alimento'; // ajuste se necessário
+
+        const form = document.getElementById('alimentoForm');
+        const statusEl = document.getElementById('status');
+        const pageTitle = document.getElementById('pageTitle');
+
+        const idInput = document.getElementById('id');
+        const nomeInput = document.getElementById('nome');
+        const descricaoInput = document.getElementById('descricao');
+        const categoriaInput = document.getElementById('categoria');
+        const subcategoriaInput = document.getElementById('subcategoria');
+        const estadoSelect = document.getElementById('estado');
+        const receitaInput = document.getElementById('receita');
+
+        const energiaInput = document.getElementById('energia');
+        const proteinaInput = document.getElementById('proteina');
+        const carboidratoInput = document.getElementById('carboidrato');
+        const fibrasInput = document.getElementById('fibras');
+        const colesterolInput = document.getElementById('colesterol');
+        const gordurasTotaisInput = document.getElementById('gordurasTotais');
+        const gordurasSaturadasInput = document.getElementById('gordurasSaturadas');
+        const acucaresInput = document.getElementById('acucares');
+        const indiceGlicemicoInput = document.getElementById('indiceGlicemico');
+
+        const imagemAtualWrapper = document.getElementById('imagemAtualWrapper');
+        const imagemAtualImg = document.getElementById('imagemAtual');
+
+        function setStatus(message, type = '') {
+            statusEl.textContent = message || '';
+            statusEl.className = 'status ' + (type || '');
+        }
+
+        function getIdFromQuery() {
+            const params = new URLSearchParams(window.location.search);
+            console.log(params);
+            return params.get('id');
+            
+        }
+
+        async function carregarAlimento(id) {
+            try {
+                setStatus('Carregando alimento...', '');
+                const data = await apiRequest(`${API_BASE}/${id}`);
+                if (!data) {
+                    setStatus('Erro ao buscar alimento.', 'error');
+                    return;
+                }
+
+                // Se o backend devolver {id, data: {...}}, usamos data.data; senão, data direto
+                const a = data.data || data;
+
+                idInput.value = a.id || id;
+                nomeInput.value = a.nome || '';
+                descricaoInput.value = a.descricao || '';
+                categoriaInput.value = a.categoria || '';
+                subcategoriaInput.value = a.subcategoria || '';
+                estadoSelect.value = a.estado || '';
+                receitaInput.value = a.receita || (Array.isArray(a.receitas) ? a.receitas[0] : '') || '';
+
+                const n = a.nutrientes || {};
+                energiaInput.value = n.energia ?? '';
+                proteinaInput.value = n.proteina ?? '';
+                carboidratoInput.value = n.carboidrato ?? '';
+                fibrasInput.value = n.fibras ?? '';
+                colesterolInput.value = n.colesterol ?? '';
+                gordurasTotaisInput.value = n.gordurasTotais ?? '';
+                gordurasSaturadasInput.value = n.gordurasSaturadas ?? '';
+                acucaresInput.value = n.acucares ?? '';
+                indiceGlicemicoInput.value = n.indiceGlicemico ?? '';
+
+                if (a.imagem) {
+                    imagemAtualWrapper.style.display = 'block';
+                    // ajuste a URL se a API servir estático em outro path
+                    imagemAtualImg.src = a.imagem.startsWith('http')
+                        ? a.imagem
+                        : `/uploads/${a.imagem}`;
+                }
+
+                pageTitle.textContent = 'Editar Alimento';
+                setStatus('');
+            } catch (err) {
+                console.error(err);
+                setStatus('Erro ao carregar alimento.', 'error');
+            }
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            setStatus('Salvando...', '');
+
+            try {
+                const formData = new FormData(form);
+
+                // Monta o JSON de nutrientes a partir dos campos numéricos
+                const nutrientes = {
+                    energia: parseFloat(energiaInput.value) || 0,
+                    proteina: parseFloat(proteinaInput.value) || 0,
+                    carboidrato: parseFloat(carboidratoInput.value) || 0,
+                    fibras: parseFloat(fibrasInput.value) || 0,
+                    colesterol: parseFloat(colesterolInput.value) || 0,
+                    acucares: parseFloat(acucaresInput.value) || 0,
+                    indiceGlicemico: parseFloat(indiceGlicemicoInput.value) || 0,
+                    gordurasTotais: parseFloat(gordurasTotaisInput.value) || 0,
+                    gordurasSaturadas: parseFloat(gordurasSaturadasInput.value) || 0
+                };
+
+                // remover campos individuais de nutrientes (opcional, só pra limpar)
+                formData.delete('energia');
+                formData.delete('proteina');
+                formData.delete('carboidrato');
+                formData.delete('fibras');
+                formData.delete('colesterol');
+                formData.delete('gordurasTotais');
+                formData.delete('gordurasSaturadas');
+                formData.delete('acucares');
+                formData.delete('indiceGlicemico');
+
+                // adicionar nutrientes como JSON
+                formData.set('nutrientes', JSON.stringify(nutrientes));
+
+                const id = idInput.value?.trim();
+                const isUpdate = !!id;
+
+                const url = isUpdate ? `${API_BASE}/${id}` : API_BASE;
+                const method = isUpdate ? 'PUT' : 'POST';
+
+                console.log(url);
+                console.log(formData);
+                // apiRequest aceita options (incluindo body e method), repassa pro fetch
+                const result = await apiRequest(url, {
+                    method,
+                    body: formData
+                });
+
+                if (!result) {
+                    setStatus('Erro ao salvar alimento.', 'error');
+                    return;
+                }
+
+                setStatus('Alimento salvo com sucesso!', 'success');
+
+                // se era create, atualiza id oculto para virar modo edição depois
+                if (!isUpdate && result.id) {
+                    idInput.value = result.id;
+                    pageTitle.textContent = 'Editar Alimento';
+                }
+            } catch (err) {
+                console.error(err);
+                setStatus('Erro ao salvar alimento.', 'error');
+            }
+        });
+
+        (function init() {
+            const id = getIdFromQuery();
+            if (id) {
+                carregarAlimento(id);
+            }
+        })();
+    </script>
+</body>
+
+</html>

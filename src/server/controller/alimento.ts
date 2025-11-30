@@ -92,13 +92,7 @@ export class AlimentoController extends Controller {
     }
 
     //roda direto com put /alimento/:id, senão deve ser chamado a partir de receita
-    async updateSimples(req, res, next): Promise<any> {
-        if(req.body.receita){
-            res.send({error:'Não é possível editar diretamente. Altere a receita associada.'});
-            return;
-        }
-        return await this.update(req,res,next);
-    }
+    
 
     async addReceitaRequest(req, res, next):Promise<any> {
         const id: string = req.params.id;      // ID vindo da rota
