@@ -19,6 +19,7 @@ import {
   Edit,
   MoreHorizontal,
   Plus,
+  Trash,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -220,7 +221,9 @@ export function DataTableDemo() {
           </p>
         </div>
         <div className="flex gap-4">
-          <Button variant={"destructive"}>Deletar Selecionados</Button>
+          <Button variant={"destructive"}>
+            <Trash /> Deletar Selecionados
+          </Button>
           <Button>
             <Plus />
             Registrar Refeição
