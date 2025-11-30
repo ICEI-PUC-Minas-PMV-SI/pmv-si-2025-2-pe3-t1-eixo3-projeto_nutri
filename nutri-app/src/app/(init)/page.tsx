@@ -1,6 +1,6 @@
 'use client'
 
-import Button from "@/components/form/button";
+import { Button } from '@/components/ui/button';
 import Image from "next/image";
 import bannerImage from "../../../public/landingPage/banner.png"
 import communityIcon from "../../../public/landingPage/communityIcon.png"
@@ -10,17 +10,12 @@ import usersIcon from "../../../public/landingPage/usersIcon.png"
 import personUsingLaptop from "../../../public/landingPage/personUsingLaptop.png"
 import Card from "@/components/landingPage/Card";
 import MetricCard from "@/components/landingPage/MetricCard";
+import Link from "next/link";
 
 export default function Home() {
-  function handleRedirectRegister(){
-    window.location.pathname = "/register"
-  }
-  function handleRedirectLogin(){
-    window.location.pathname = "/login"
-  }
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-1 flex-col">
 
       <section className="flex justify-center items-center w-full h-[40rem] bg-contrast-background px-72 py-24">
         <div className="flex justify-between items-center gap-28">
@@ -35,12 +30,10 @@ export default function Home() {
               </p>
             </div>
 
-            <Button
-              text="Comece já"
-              width="md"
-              height="lg"
-              handleClick={handleRedirectRegister}
-            />
+            <Link href={"/register"}>
+              <Button
+              >Comece já</Button>
+            </Link>
           </div>
           <Image src={bannerImage} alt="Happy woman eating healthy food" width={320} height={428}></Image>
         </div>
@@ -117,11 +110,10 @@ export default function Home() {
                 Acompanhe tudo o que você come em um só lugar — de forma simples e visual. Registre suas refeições, monitore suas metas e entenda seus padrões alimentares com clareza. Nosso app ajuda você a transformar dados em consciência, tornando o cuidado com a alimentação parte natural da sua rotina.
               </p>
             </div>
-            <Button
-              text="comece sua jornada"
-              height="lg"
-              handleClick={handleRedirectRegister}
-            />
+            <Link href={"/register"}>
+              <Button
+              >comece sua jornada</Button>
+            </Link>
           </div>
         </div>
       </section>

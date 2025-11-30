@@ -1,8 +1,7 @@
+import { Button } from "../ui/button";
 import { Label } from "../ui/label";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
-import Button from "./button";
-import Input from "./input";
-// import Select from "./select";
+import InputField from "./inputField";
 
 type RegisterBasicInfoFormProps = {
     handleNext: (e:any) => void
@@ -12,53 +11,52 @@ export default function RegisterBasicInfoForm({handleNext}: RegisterBasicInfoFor
     const userProfiles = [
         {value: "Nutricionista"},
         {value: "Usuário"},
+        {value: "Personal"},
+        {value: "Convidado"},
     ]
 
     return (
         <div className="flex flex-col h-full w-full gap-10">
     
                 <div className="flex flex-col justify-start items-center w-full  gap-8">
-                    <Input
+                    <InputField
                         title="Nome" 
                         type="text" 
                         placeholder="Nome Completo" 
                     />
-                    <Input
+                    <InputField
                         title="Email" 
                         type="email" 
                         placeholder="email@gmail.com" 
                     />
-                    {/* <Select
-                        title="Tipo de perfil"
-                        options={userProfiles}
-                    /> */}
-                    <Label>Tipo de Usuario</Label>
-                    <Select>
-                        <SelectTrigger className="w-full">
-                            <SelectValue placeholder="Usuário" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectItem value="Usuário">Usuário</SelectItem>
-                                <SelectItem value="Nutricionista">Nutricionista</SelectItem>
-                                <SelectItem value="Personal">Personal</SelectItem>
-                                <SelectItem value="Convidado">Convidado</SelectItem>
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
-                    <Input
+                    <div className="flex flex-col gap-2 justify-center items-start w-[30rem]">
+                        <Label className="flex self-start">Tipo de Usuario *</Label>
+                        <Select>
+                            <SelectTrigger className="w-full">
+                                <SelectValue placeholder="Usuário" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup>
+                                    {userProfiles.map((option) => (
+                                        <SelectItem value={option.value}>{option.value}</SelectItem>
+                                    ))}
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
+                    </div>
+                    <InputField
                         title="Senha" 
                         type="password" 
                         placeholder="**************" 
                     />
-                    <Input
+                    <InputField
                         title="Confirme a senha" 
                         type="password" 
                         placeholder="**************" 
                     />
                 </div>
                 <div className="flex justify-end items-center w-full">
-                    <Button text="Avançar" handleClick={handleNext}></Button>
+                    <Button onClick={handleNext}>Avançar</Button>
                 </div>
             </div>
     )

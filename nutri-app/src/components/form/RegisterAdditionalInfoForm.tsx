@@ -1,6 +1,5 @@
-import Button from "./button";
-import Input from "./input";
-import Select from "./select";
+import { Button } from "../ui/button";
+import InputField from "./inputField";
 
 type RegisterAdditionalInfoFormProps = {
     handleReturn: (e:any) => void
@@ -24,13 +23,13 @@ export default function RegisterAdditionalInfoForm({handleReturn, handleRegister
 
                     <div className="w-full flex flex-col justify-center items-center gap-8">
                         <div className="flex justify-between items-center gap-16">
-                            <Input
+                            <InputField
                                 title="Peso"
                                 size="md"
                                 type="text"
                                 placeholder="67kg"
                             />
-                            <Input
+                            <InputField
                                 title="Altura"
                                 size="md"
                                 type="text"
@@ -38,13 +37,13 @@ export default function RegisterAdditionalInfoForm({handleReturn, handleRegister
                             />
                         </div>
                         <div className="flex justify-between items-center gap-16">
-                            <Input
+                            <InputField
                                 title="Genero"
                                 size="md"
                                 type="text"
                                 placeholder="67kg"
                             />
-                            <Input
+                            <InputField
                                 title="Idade"
                                 size="md"
                                 type="text"
@@ -61,14 +60,14 @@ export default function RegisterAdditionalInfoForm({handleReturn, handleRegister
 
                     <div className="w-full flex flex-col justify-center items-center gap-8">
                         <div className="flex justify-between items-center gap-16">
-                            <Input
+                            <InputField
                                 title="Peso ideal"
                                 size="md"
                                 type="text"
                                 placeholder="67kg"
                                 isOptional={true}
                             />
-                            <Input
+                            <InputField
                                 title="Consumo de água diário"
                                 size="md"
                                 type="text"
@@ -77,7 +76,7 @@ export default function RegisterAdditionalInfoForm({handleReturn, handleRegister
                             />
                         </div>
                         <div className="flex w-full justify-start items-center gap-16">
-                            <Input
+                            <InputField
                                 title="Calorias"
                                 size="md"
                                 type="text"
@@ -90,8 +89,8 @@ export default function RegisterAdditionalInfoForm({handleReturn, handleRegister
 
 
                 <div className="flex justify-between items-center w-full">
-                    <Button text="Voltar" style="secondary" handleClick={handleReturn}></Button>
-                    <Button text="Cadastrar" handleClick={handleRegister}></Button>
+                    <Button variant="secondary" onClick={handleReturn}>Voltar</Button>
+                    <Button onClick={handleRegister}>Cadastrar</Button>
                 </div>
             </div>
     )

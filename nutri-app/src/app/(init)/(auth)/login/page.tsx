@@ -1,11 +1,11 @@
 'use client'
 
 import AuthFormCard from "@/components/form/AuthFormCard";
-import Button from "@/components/form/button";
-import Input from "@/components/form/input";
+import InputField from "@/components/form/inputField";
+import { Button } from "@/components/ui/button";
 
 function handleLogin(e: any) {
-window.location.pathname = "/main"
+  window.location.pathname = "/dashboard"
 }
 
 export default function Login() {
@@ -18,19 +18,19 @@ export default function Login() {
         <div className="flex flex-col h-full w-full gap-10">
 
           <div className="flex flex-col justify-start items-center w-full  gap-8">
-              <Input
+              <InputField
                   title="Email" 
                   type="email" 
                   placeholder="email@gmail.com" 
               />
-              <Input
+              <InputField
                   title="Senha" 
                   type="password" 
                   placeholder="**************" 
               />
           </div>
           <div className="flex justify-center items-center w-full">
-            <Button text="Login" handleClick={handleLogin}></Button>
+            <Button onClick={handleLogin}>Login</Button>
           </div>
         </div>
 

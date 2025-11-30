@@ -54,7 +54,7 @@ const data = {
   social: [
     {
       title: "Informações de Usuário",
-      url: "/info",
+      url: "/profile",
       icon: UserCog2,
     },
     {
