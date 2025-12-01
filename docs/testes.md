@@ -1,10 +1,16 @@
 # 5. PLANO DE TESTES DE SOFTWARE
 
 [Teste 1: Deborah](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Deborah.docx) 
+
 [Teste 2: Carlos](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Carlos.docx) 
+
 [Teste 3: Gabriel](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Gabriel.docx) 
+
 [Teste 4: Isabelle](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Isabelle.docx) 
+
 [Teste 5: Thiago](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Thiago.docx) 
+
+[Teste 6: Lucas](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Thiago.docx) 
 
 [Avaliação_Heurística.xlsx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Avaliacao_Heuristica.xlsx) 
 
