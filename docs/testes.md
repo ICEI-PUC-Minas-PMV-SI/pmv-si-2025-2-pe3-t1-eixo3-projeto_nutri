@@ -2,7 +2,11 @@
 
 [Teste 1: Deborah](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Deborah.docx) 
 [Teste 2: Carlos](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Carlos.docx) 
+[Teste 3: Gabriel](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%Gabriel.docx) 
+[Teste 4: Isabelle](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%Isabelle.docx) 
+[Teste 5: Thiago](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%Thiago.docx) 
 
+[Avaliação_Heurística.xlsx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Avaliacao_Heuristica.xlsx) 
 
 Nesta etapa devem ser realizados dois tipos de avaliação: por observação de sessão de uso (teste com usuários) e por inspeção (avaliação heurística, realizada pelos especialistas em usabilidade). Foram disponibilizados em "Material de Apoio" modelos para o registro dos testes que deverão ser realizados da seguinte maneira:
 •	Na avaliação heurística, cada integrante do grupo deverá preencher a planilha correspondente ao teste (arquivo Avaliação_Heurística.xlsx). Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
