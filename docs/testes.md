@@ -10,7 +10,7 @@
 
 [Teste 5: Thiago](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Thiago.docx) 
 
-[Teste 6: Lucas](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Thiago.docx) 
+[Teste 6: Lucas](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Relat%C3%B3rio%20de%20Teste%20com%20Usu%C3%A1rio%20-%20Lucas.docx) 
 
 [Avaliação_Heurística.xlsx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_nutri/blob/main/docs/assets/Avaliacao_Heuristica.xlsx) 
 
