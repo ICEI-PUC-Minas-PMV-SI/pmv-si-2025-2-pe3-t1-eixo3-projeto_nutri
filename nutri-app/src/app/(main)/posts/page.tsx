@@ -1,15 +1,11 @@
-'use client'
-
 import Post from "@/components/posts/post";
 import { Button } from "@/components/ui/button";
 import fabiana from "../../../../public/posts/fabiana.png"
-import { PlusIcon, Trash2Icon, ListFilterIcon } from "lucide-react";
-import { useState } from "react";
-import AddPostModal, { PostModal } from "@/components/posts/addPostModal";
+import { Trash2Icon, ListFilterIcon } from "lucide-react";
+import { PostModal } from "@/components/posts/addPostModal";
 
 
 export default function Profile() {
-    const [creatingPost, setCreatingPost] = useState(false)
 
     const posts = [
         {
@@ -52,8 +48,6 @@ export default function Profile() {
             content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensure."
         },
     ]
-
-    const handleCreatePost = () => setCreatingPost(true)
 
     return <div className="flex w-full px-72 justify-center items-center">
         <div className="h-full w-full py-12 gap-8 flex flex-col justify-center items-center">

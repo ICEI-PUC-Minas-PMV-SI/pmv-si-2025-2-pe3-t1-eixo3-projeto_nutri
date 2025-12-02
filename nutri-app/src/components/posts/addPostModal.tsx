@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Plus, PlusIcon, Save, SquarePlus } from "lucide-react"
 import InputField from "../form/inputField"
+import { Textarea } from "../ui/textarea"
 
 export const PostModal = () => {
     return (
@@ -31,23 +32,27 @@ export const PostModal = () => {
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                         </DialogDescription>
                     </DialogHeader>
-                   <div className="flex gap-9 items-center">
-                    <div className="flex flex-col gap-4">
-                    < p className="flex text-primary font-semibold text-lg whitespace-nowrap">Adicione uma capa ao seu post: </p>
-                    <div className="flex items-center justify-center w-[268px] border h-[172] rounded-lg">
-                <SquarePlus className="text-primary"/>
+                    <div className="flex gap-9 items-center">
+                        <div className="flex flex-col gap-4">
+                            < p className="flex text-primary font-semibold text-lg whitespace-nowrap">Adicione uma capa ao seu post: </p>
+                            <div className="flex items-center justify-center w-[268px] border h-[172] rounded-lg">
+                                <SquarePlus className="text-primary" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-6 w-full">
+                            <InputField title="Título" type="text" />
+                            <InputField title="Categoria" type="text" />
+                        </div>
                     </div>
+                    <div className="flex flex-col justify-center items-start gap-2">
+                        <p className="flex text-primary font-semibold text-lg whitespace-nowrap">Escreva seu texto: </p>
+                        <Textarea className="h-60 w-full border text-start rounded-sm " placeholder="Café da manhã"></Textarea>
                     </div>
-                    <div className="flex flex-col gap-6 w-full">
-                        <InputField title="Título" type="text"  />
-                        <InputField title="Categoria" type="text"  />
-                    </div>
-                   </div>
                     <DialogFooter>
                         <DialogClose asChild>
                             <Button variant="outline">Cancelar</Button>
                         </DialogClose>
-                        <Button type="submit"><Save/> Postar</Button>
+                        <Button type="submit"><Save /> Postar</Button>
                     </DialogFooter>
                 </DialogContent>
             </form>

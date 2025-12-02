@@ -14,7 +14,7 @@ export default function Register()  {
     }
 
     return (
-            <div className="flex flex-col gap-8 justify-center items-center w-full h-full">
+        <div className="flex flex-col gap-8 justify-center items-center w-full h-full">
             <h1 className="flex justify-center items-center text-primary font-bold text-[2rem]">
                 {isFirststep? "Cadastro do Usuário" : "Nos fale sobre você"}
             </h1>

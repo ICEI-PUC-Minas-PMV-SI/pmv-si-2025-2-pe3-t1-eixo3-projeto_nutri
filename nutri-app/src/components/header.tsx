@@ -10,7 +10,7 @@ export default function Header(){
     const onLandingPage = usePathname() == "/"
 
     return (
-        <div className="flex justify-center items-center w-full h-20 px-16 bg-contrast-background border border-stroke">
+        <div className="flex justify-center items-center w-full min-h-20 px-16 bg-contrast-background border border-stroke">
             <div className="flex justify-between items-center w-full h-10 px-6">
 
                 { !onLandingPage ? (

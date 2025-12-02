@@ -20,12 +20,12 @@ export default function Login() {
           <div className="flex flex-col justify-start items-center w-full  gap-8">
               <InputField
                   title="Email" 
-                  type="email" 
+                  type="email"
                   placeholder="email@gmail.com" 
               />
               <InputField
                   title="Senha" 
-                  type="password" 
+                  type="password"
                   placeholder="**************" 
               />
           </div>
